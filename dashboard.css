@@ -1,0 +1,30 @@
+/*!
+ * Start Bootstrap - Portfolio Item (https://startbootstrap.com/template-overviews/portfolio-item)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-portfolio-item/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.padding {
+	padding-top: 30px;
+}
+
+.welcome {
+	display: inline;
+}
+
+.search {
+	display: inline;
+	margin-left: 20%;
+}
+
+
