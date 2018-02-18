@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Dashboard</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">PubDev</a>
+      </div>
+    </nav>
+    <div class="container">
+        <h2>Developer Account Signup</h2>
+        <form action="">
+            <div class="form-group">
+                <label for="Name">Name:</label>
+                <input type="Name" class="form-control" id="name" placeholder="Developer Name" name="name" disabled>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" class="form-control" id="email" placeholder="Developer Email Address" name="email" disabled>
+            </div>
+            <div class="form-group">
+                <label for="bio">About me:</label>
+                <textarea class="form-control" id="bio" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for ="skills">Skills:</label><br>
+                <select id=skills-dropdown class="dropdown">
+                    <optgroup label="Frontend">
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>React.js</option>
+                        <option>Angular.js</option>
+                    </optgroup>
+                    <optgroup label="Backend">
+                        <option>Python</option>
+                        <option>Node.js</option>
+                        <option>Ruby</option>
+                        <option>MongoDB</option>
+                        <option>MySQL</option>
+                    </optgroup>
+                </select>
+                <textarea class="form-control" id="skills" readonly></textarea>
+            </div>
+            <div class="form-group">
+                    <label for ="causes">Causes I am interested in:</label><br>
+                    <select id=causes-dropdown class="dropdown">
+                        <option>Women's Rights</option>
+                        <option>Climate Change</option>
+                        <option>Racial Equality</option>
+                        <option>Animal Rights</option>
+                        <option>Poverty</option>
+                    </select>
+                    <textarea class="form-control" id="causes" readonly></textarea>
+            </div>
+            <div class="form-group">
+                <label for="portfolio">Portfolio Link:</label>
+                <input type="portfolio" class="form-control" id="name" placeholder="" name="portfolio">
+            </div>
+            <div class="form-group">
+                <label for="github">GitHub Username:</label>
+                <input type="github" class="form-control" id="github" placeholder="" name="github">
+            </div>
+            <div class="form-group">
+                <label for="portfolio">LinkedIn Username:</label>
+                <input type="linkedin" class="form-control" id="linkedin" placeholder="" name="linkedin">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+
+
+    <footer class="py-5 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
+        </div>
+      </footer>
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="scripts/scripts.js"></script>
+</body>
+</html>
