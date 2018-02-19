@@ -6,62 +6,155 @@
   <title>Dashboard</title>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/dashboard.css" rel="stylesheet">
+  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+
+  
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">PubDev</a>
-    </div>
-  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">PubDev</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#signup" class="nav-link" data-toggle="modal">Sign Up</a>
+              <!-- Modal HTML -->
+              <!-- from https://www.w3schools.com/howto/howto_css_modals.asp-->
+              <div id="signup" class="modal fade" data-backdrop="false">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Sign Up</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
 
+                    <div class="modal-body">
+                      <form>
+                        <!--from https://mdbootstrap.com/components/forms/-->
+                <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <label for="defaultForm-email">Name</label>
+                    <input type="text" id="defaultForm-email" class="form-control">
+                </div>
+                <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <label for="defaultForm-email">Email</label>
+                    <input type="text" id="defaultForm-email" class="form-control">
+                </div>
+                <div class="md-form">
+                    <i class="fa fa-lock prefix grey-text"></i>
+                    <label for="defaultForm-pass">Password</label>
+                    <input type="password" id="defaultForm-pass" class="form-control">
+                </div>
+                <form action="">
+                  <input type="checkbox" name="user" value="developer"> I am a Developer.<br>
+                  <input type="checkbox" name="user" value="nonprofit"> I am a Non-Profit.
+              </form>
 
+                <div class="text-center">
+                    <a href="signup.html" class="btn btn-default">Sign Up</a>
+                </div>
+                        </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" href="#login">Log In</a>
+              <!-- Modal HTML -->
+              <!-- from https://www.w3schools.com/howto/howto_css_modals.asp-->
+              <div id="login" class="modal fade" data-backdrop="false">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Log In</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                    </div>
+
+                    <div class="modal-body">
+                      <form>
+                        <!--from https://mdbootstrap.com/components/forms/-->
+                <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <label for="defaultForm-email">Email</label>
+                    <input type="text" id="defaultForm-email" class="form-control">
+                </div>
+
+                <div class="md-form">
+                    <i class="fa fa-lock prefix grey-text"></i>
+                    <label for="defaultForm-pass">Password</label>
+                    <input type="password" id="defaultForm-pass" class="form-control">
+                </div>
+
+                <div class="text-center">
+                    <a href="dashboard.html" class="btn btn-default">Login</a>
+                </div>
+                        </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
   <div class="container">
-
-    <h1 class="welcome">Welcome, Developer</h1>
-    <div class="search">
-      <input type="text" placeholder="Search Nonprofits...">
-    </div>
-
     <div class="padding"></div>
-
     <div class="row">
-
+      <div class="col-md-6 col-sm-12">
+        <h1 class="welcome">Welcome, Developer</h1>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="search">
+          <input type="text" placeholder="Search Nonprofits...">
+        </div>
+      </div>
+    </div>
+    <div class="padding"></div>
+    <div class="row">
       <div class="col-md-6 col-sm-12">
         <h3 style="text-align: center">Current Projects</h3>
         <div class="col-md-12 col-sm-12 mb-4">
-          <a href="exampleproject.html">
-            <img class="img-fluid" src="img/coding.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-12 col-sm-12 mb-4">
-          <a href="exampleproject.html">
-            <img class="img-fluid" src="img/coding.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-12 col-sm-12 mb-4">
-          <a href="exampleproject.html">
-            <img class="img-fluid" src="img/coding.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-12 col-sm-12 mb-4">
-          <a href="exampleproject.html">
-            <img class="img-fluid" src="img/coding.jpg" alt="">
-          </a>
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/boyscouts.jpg">
+            <div class="card-block">
+              <h4 class="card-title">Boy Scout Troop Website</h4>
+              <ul>
+                <li>Develop kettlecorn purchase form</li>
+                <li>Update homepage with jamboree pictures</li>
+              </ul>
+              <div class="card-btn">
+                <a href="#" class="btn btn-primary">Project Page</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
         <h3 style="text-align: center">Potential Projects</h3>
         <div class="col-md-12 col-sm-12 mb-4">
-          <a href="exampleproject.html">
-            <img class="img-fluid" src="img/helping.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-12 col-sm-12 mb-4">
-          <a href="exampleproject.html">
-            <img class="img-fluid" src="img/helping.jpg" alt="">
-          </a>
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/refugees.jpg">
+            <div class="card-block">
+              <h4 class="card-title">Refugee ESL Website</h4>
+              <p class="card-text">Help connect refugees with services to help them learn English!</p>
+              <div class="card-btn">
+                <a href="#" class="btn btn-primary">Find Out More</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
