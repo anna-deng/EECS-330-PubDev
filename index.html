@@ -46,8 +46,9 @@
                     </div>
 
                     <div class="modal-body">
-                      <form>
+                      <form id="signup-form" onsubmit="validateSignup()" action="signup.html" novalidate>
                         <!--from https://mdbootstrap.com/components/forms/-->
+<<<<<<< HEAD
                 <div class="md-form">
                     <i class="fa fa-envelope prefix grey-text"></i>
                     <label for="defaultForm-email">Name</label>
@@ -73,6 +74,32 @@
                 </div>
                         </form>
                       </div>
+=======
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <label>Name</label>
+                            <input type="text" id="signup-name" class="form-control">
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <label>Email</label>
+                            <input type="text" id="signup-email" class="form-control">
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix grey-text"></i>
+                            <label>Password</label>
+                            <input type="password" id="signup-pass" class="form-control">
+                        </div>
+                        <div class="md-form">
+                          <input type="checkbox" name="user" value="developer">I am a Developer.<br>
+                          <input type="checkbox" name="user" value="nonprofit">I am a Non-Profit.
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-default">Sign Up</button>
+                        </div>
+                      </form>
+                    </div>
+>>>>>>> 76cc5f423d3242f7292c1784e4d6037d058172e7
                   </div>
                 </div>
               </div>
@@ -91,6 +118,7 @@
                     </div>
 
                     <div class="modal-body">
+<<<<<<< HEAD
                       <form>
                         <!--from https://mdbootstrap.com/components/forms/-->
                 <div class="md-form">
@@ -110,6 +138,29 @@
                 </div>
                         </form>
                       </div>
+=======
+                      <form id="login-form" onsubmit="validateLogin()" action="dashboard.html">
+            
+                          <!--from https://mdbootstrap.com/components/forms/-->
+                        <div class="md-form">
+                          <i class="fa fa-envelope prefix grey-text"></i>
+                          <label for="defaultForm-email">Email</label>
+                          <input type="text" id="login-email" class="form-control">
+                        </div>
+            
+                        <div class="md-form">
+                          <i class="fa fa-lock prefix grey-text"></i>
+                          <label for="defaultForm-pass">Password</label>
+                          <input type="password" id="login-pass" class="form-control">
+                        </div>
+            
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-default">Login</button>
+                        </div>
+            
+                      </form>
+                    </div>
+>>>>>>> 76cc5f423d3242f7292c1784e4d6037d058172e7
                   </div>
                 </div>
               </div>
@@ -193,6 +244,7 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+    <script src="scripts/home.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
