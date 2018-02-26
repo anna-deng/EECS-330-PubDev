@@ -10,8 +10,8 @@ function validateSignup(){
         let nameValidation = document.createElement("div");
         nameValidation.innerHTML = "Enter your name";
         nameValidation.className = "text-danger";
-        nameValidation.id = "nameValidation";
-        if (!document.getElementById('nameValidation')){
+        nameValidation.id = "signupNameValidation";
+        if (!document.getElementById('signupNameValidation')){
             name.parentElement.insertBefore(nameValidation, name.nextSibling);
         }
     }
@@ -19,8 +19,8 @@ function validateSignup(){
         let passValidation = document.createElement("div");
         passValidation.innerHTML = "Enter your password";
         passValidation.className = "text-danger";
-        passValidation.id = "passValidation";
-        if (!document.getElementById('passValidation')){
+        passValidation.id = "signupPassValidation";
+        if (!document.getElementById('signupPassValidation')){
             password.parentElement.insertBefore(passValidation, password.nextSibling);
         }
     }
@@ -28,8 +28,8 @@ function validateSignup(){
         let emailValidation = document.createElement("div");
         emailValidation.innerHTML = "Enter a valid email address";
         emailValidation.className = "text-danger";
-        emailValidation.id = "emailValidation";
-        if (!document.getElementById('emailValidation')){
+        emailValidation.id = "signupEmailValidation";
+        if (!document.getElementById('signupEmailValidation')){
             email.parentElement.insertBefore(emailValidation, email.nextSibling);
         }
     }
@@ -47,8 +47,8 @@ function validateLogin(){
         let passValidation = document.createElement("div");
         passValidation.innerHTML = "Enter your password";
         passValidation.className = "text-danger";
-        passValidation.id = "passValidation";
-        if (!document.getElementById('passValidation')){
+        passValidation.id = "loginPassValidation";
+        if (!document.getElementById('loginPassValidation')){
             password.parentElement.insertBefore(passValidation, password.nextSibling);
         }
     }
@@ -57,8 +57,8 @@ function validateLogin(){
         let emailValidation = document.createElement("div");
         emailValidation.innerHTML = "Enter a valid email address";
         emailValidation.className = "text-danger";
-        emailValidation.id = "emailValidation";
-        if (!document.getElementById('emailValidation')){
+        emailValidation.id = "loginEmailValidation";
+        if (!document.getElementById('loginEmailValidation')){
             email.parentElement.insertBefore(emailValidation, email.nextSibling);
         }
     }

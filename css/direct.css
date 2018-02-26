@@ -1,4 +1,8 @@
 
+.hide {
+  display: none;
+}
+
 .navbar-username {
   color: white;
   margin-right: 50px;
@@ -64,8 +68,8 @@
 }
 
 .card-img-top{
-  height: 225px;
-  width:19.75rem;
+  height: 50%;
+  width:100%;
   border-radius: 1%;
   display: inline-block;
 }
@@ -74,6 +78,11 @@
   text-align: center;
   margin-top: 10px;
   font-weight: 400;
+}
+
+.card{
+  float: left;
+  width: 30%;
 }
 
 .card-text{
