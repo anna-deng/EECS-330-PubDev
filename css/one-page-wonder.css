@@ -2,14 +2,18 @@ body {
   font-family: 'Lato';
 }
 
-h1,
+h1 {
+  font-family: 'Catamaran';
+  font-weight: 100;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: 'Catamaran';
-  font-weight: 800 !important;
+  font-weight: 800;
 }
 
 .btn-xl {
