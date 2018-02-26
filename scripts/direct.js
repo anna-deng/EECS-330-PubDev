@@ -1,6 +1,6 @@
 function filtercards(){
   var cards = Array.from(document.getElementsByClassName('card'));
-  var checks = Array.from(document.getElementsByClassName('causecheck')).concat(Array.from(document.getElementsByClassName('skillcheck')));
+  var causechecks = Array.from(document.getElementsByClassName('causecheck')).concat(Array.from(document.getElementsByClassName('skillcheck')));
   checks = checks.filter(function(check){
     return check.checked;
   })
