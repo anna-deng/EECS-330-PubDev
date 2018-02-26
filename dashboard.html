@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">PubDev</a>
@@ -20,12 +22,58 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" href="search.html">Search</a>
+            <a class="nav-link" data-toggle="modal" href="nonprofdirectory.html">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" href="signup.html">Profile</a>
           </li>
         </ul>
+      </div>
     </div>
   </nav>
-    
+  
+
+  <!-- MODALS -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+        <h2>Build Kettlecorn Purchase Form</h2>
+        <h4>Deadline: 4/4/18</h4>
+        <p>Every year the Boy Scouts sell Kettlecorn as a fundraiser.  We need to implement a purchase form for customers looking to buy kettlecorn from Troop 75.  The specifics on cost and types of kettlecorn can be found with Ben.  If you have any questions, contact Ben.  Let's sell some corn!</p>
+    </div>
+  </div>
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+        <h2>Fill in Scoutmaster Bios</h2>
+        <h4>Deadline: 4/8/18</h4>
+        <p>In the GitHub, there is a document with a short bio for each of the scoutmasters.  Please adjust the "About Us" page to accomodate these new bios.</p>
+    </div>
+  </div>
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+        <h2>Embed Troop Video to Homepage</h2>
+        <h4>Deadline: 4/9/18</h4>
+        <p>Troop 75 filmed a short video from our hike up Mt. Washington last Thursday.  Please embed this video on the "Troop Trips" page with a short description of the activity.</p>
+    </div>
+  </div>
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+        <h2>Update Contact Information</h2>
+        <h4>Deadline: 4/15/18</h4>
+        <p>Since they're taking down the old community building, Troop 75 will be meeting at the elementary school on Bow Center Road.  Please adjust the contact information accordingly.</p>
+        <button onclick="claimTask('contact', this.id)">Claim Task</button>
+    </div>
+  </div>
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+        <h2>Create Community Calendar</h2>
+        <h4>Deadline: 4/20/18</h4>
+        <p>We have a lot of events in our troop and are hoping to make it easier for parents and scouts to get on board with upcoming events.  Please develop a calendar that can display troop events on our website.</p>
+        <button onclick="claimTask('calendar')">Claim Task</button>
+    </div>
+  </div>
+
+
+
   <div class="container">
     <div class="padding"></div>
     <h1 class="welcome">Welcome, Developer</h1>
@@ -35,42 +83,41 @@
         <img class="proj-img" src="img/boyscouts.jpg">
         <h3 class="proj-title">Troop 75 Website</h3>
       </div>
+
+
       <div class="container">
-        <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
-        <a class="btn btn-default btn-primary" href="https://github.com/">GitHub</a>
-        <a class="btn btn-default btn-primary" href="profile.html">NonProfit Page</a>
+        <div class="btn-container">
+          <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
+          <a class="btn btn-default btn-primary" href="https://github.com/">GitHub</a>
+          <a class="btn btn-default btn-primary" href="profile.html">NonProfit Page</a>
+        </div>
+
+
         <div class="row">
           <div class="col-sm-6">
             <h4>MY TASKS</h4>
-            <ul>
-              <li><a id="myBtn">Build Kettlecorn Purchase Form</a>
-                <div id="myModal" class="modal">
-                  <div class="modal-content">
-                    <span class="close">x</span>
-                    <p>Every year the Boy Scouts sell Kettlecorn as a fundraiser.  We need to implement a purchase form for customers looking to buy kettlecorn from Troop 75.  The specifics on cost and types of kettlecorn can be found with Ben.  If you have any questions, contact Ben.  Let's sell some corn!</p>
-                  </div>
-                </div>
-              </li>
-              <li>Fill in Scoutmaster Bios</li>
-              <li>Embed Troop Video to Homepage</li>
+            <ul id="taskList" class="proj-list">
+              <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal1">Build Kettlecorn Purchase Form</li>
+              <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal2">Fill in Scoutmaster Bios</li>
+              <li class="proj-list-itm" data-toggle="modal" data-target="#modal3">Embed Troop Video to Homepage</li>
             </ul>
+
+
             <h4>OPEN TASKS</h4>
-            <ul>
-              <li>Update Contact Information</li>
-              <li>Create Community Calendar</li>
-              <li>Update Member Lists</li>
-              <li>Congratulate new Boy Scouts Message</li>
+            <ul id="openList" class="proj-list">
+              <li id="contact" class="proj-list-itm" data-toggle="modal" data-target="#modal4">Update Contact Information</li>
+              <li id="calendar" class="proj-list-itm" data-toggle="modal" data-target="#modal5">Create Community Calendar</li>
             </ul>
           </div>
           <div class="col-md-6">
             <div>
               <h4>MEMBERS</h4>
-              <ul>
-                <li>Ben Pinski [Project Manager]</li>
-                <li>Ben Segal</li>
-                <li>Ben Smith</li>
-                <li>Ben Hendrix</li>
-                <li>Ben Podis</li>
+              <ul class="proj-list">
+                <li class="proj-list-itm">Ben Pinski [Project Manager]</li>
+                <li class="proj-list-itm">Ben Segal</li>
+                <li class="proj-list-itm">Ben Smith</li>
+                <li class="proj-list-itm">Ben Hendrix</li>
+                <li class="proj-list-itm">Ben Podis</li>
               </ul>
             </div>
           </div>
@@ -88,19 +135,6 @@
   </footer>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    var modal = document.getElementById('myModal');
-    var btn = document.getElementById("myBtn");
-    var span = document.getElementsByClassName("close")[0];
-    btn.onclick = function() {modal.style.display = "block";}
-    span.onclick = function() {modal.style.display = "none";}
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
-
+  <script src="dashboard.js"></script>
 </body>
 </html>

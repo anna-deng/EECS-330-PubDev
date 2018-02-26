@@ -24,13 +24,14 @@ body {
 
 #projectbox {
 	outline-style: solid;
+	outline-width: 1px;
+	outline-color: rgb(76, 76, 76);
 }
 
 .proj-heading {
 	position: relative;
 	text-align: center;
 	color: white;
-	
 }
 
 .proj-img {
@@ -39,16 +40,22 @@ body {
 }
 
 .proj-title {
+	font-size: 4vw;
 	position: absolute;
 	top: 2%;
 	left: 2%;
+}
+
+.btn-container {
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 .modal {
 	display: none;
 	position: fixed;
 	z-index: 1;
-	padding-top: 100px;
+	padding: 15%;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -63,7 +70,7 @@ body {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 100%;
 }
 
 .close {
@@ -71,6 +78,7 @@ body {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    text-align: right;
 }
 
 .close:hover,
@@ -78,4 +86,17 @@ body {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.proj-list {
+	list-style-type: none;
+}
+
+.proj-list-itm {
+	cursor: pointer;
+	outline-style: solid;
+	outline-width: 1px;
+	outline-color: rgb(76, 76, 76);
+	margin: 3%;
+	background-color: rgb(230, 230, 230);
 }
