@@ -97,6 +97,10 @@ body {
 	list-style-type: none;
 }
 
+.proj-list-itm:hover{
+  font-weight: bold;
+}
+
 .proj-list-itm {
   font-weight: 100;
   display: list-item;          /* This has to be "list-item"                                               */
