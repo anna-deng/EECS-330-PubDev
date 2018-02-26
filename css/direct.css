@@ -41,6 +41,7 @@
   text-align: center;
   margin-top: 15px;
   color: #424242;
+  font-weight: 450;
 }
 
 .main {
@@ -52,6 +53,8 @@
   text-align: center;
   margin-top: 15px;
   color: #424242;
+  font-weight: 500;
+  font-size: 35px;
 }
 
 .card-group{
@@ -70,10 +73,12 @@
 .card-title{
   text-align: center;
   margin-top: 10px;
+  font-weight: 400;
 }
 
 .card-text{
   margin-top: -5px;
+  font-weight: 300;
 }
 
 .npbutton{
