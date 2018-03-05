@@ -1,12 +1,8 @@
-function volUp() {
-	for (i = 0; i < 6; i++) {
-		var color = volLevels[i].style.backgroundColor;
-		if (color == "rgb(181, 0, 115)") {}
-		else {
-			volLevels[i].style.backgroundColor = "rgb(181, 0, 115)";
-			break;
-    	}
-  	}
+var modal = document.getElementById('modal1');
+var span = document.getElementsByClassName("close")[0];
+var btn = document.getElementById('submit')
+span.onclick = function() {
+    modal.style.display = "none";
 }
 
 function claimTask() {
@@ -15,6 +11,10 @@ function claimTask() {
 	taskList = taskList.appendChild(calendar);
 	var btn = arguments[1];
 	btn.innerHTML = "Testing";
-
 }
 
+function sendMessage() {
+	event.preventDefault();
+	btn.innerHTML = "Submitted!";
+	btn.setAttribute("class", "btn btn-primary disabled");
+}
