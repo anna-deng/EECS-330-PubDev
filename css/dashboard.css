@@ -89,7 +89,7 @@
 }
 
 .proj-list-itm {
-  font-weight: 100;
+  font-weight: 300;
   display: list-item;          /* This has to be "list-item"                                               */
   list-style-type: disc;
 	cursor: pointer;
