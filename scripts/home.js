@@ -38,6 +38,7 @@ function validateSignup(){
 function validateLogin(){
     let password = document.getElementById('login-pass');
     let email = document.getElementById('login-email');
+    let form = document.getElementById("login-form");
 
     if (!password.value || !isValidEmail(email.value)){
         event.preventDefault();
@@ -63,9 +64,33 @@ function validateLogin(){
         }
     }
 
+    if(email.value == 'pm@pm.com')
+    {
+     form.action ="pm.html";
+    }
+    else
+    {
+      form.action ="dashboard.html";
+    }
 }
 
 function isValidEmail(email){
     let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }
+
+function removeElementsByClass(className){
+    var elements = document.getElementsByClassName(className);
+    while(elements.length > 0){
+        elements[0].parentNode.removeChild(elements[0]);
+    }
+}
+
+$(function(){
+    $('#signup').on('hide.bs.modal', function(e){
+        removeElementsByClass('text-danger');
+    })
+    $('#login').on('hide.bs.modal', function(e){
+        removeElementsByClass('text-danger');
+    })
+})

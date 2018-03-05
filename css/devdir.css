@@ -1,0 +1,157 @@
+
+.hide {
+  display: none;
+}
+
+.navbar-username {
+  color: white;
+  margin-right: 50px;
+}
+
+.navbar-username:hover{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profpic{
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 7px;
+}
+
+.top {
+    position: absolute;
+    left:0; right:0;
+}
+
+.left {
+    position:absolute;
+    left:0; top:225px; bottom: 0; right: 0;
+    width: 300px;
+    overflow: auto;
+    height: auto;
+    padding: .5rem;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+
+.light::-webkit-scrollbar {
+    display: none;
+}
+
+.left-header{
+  text-align: center;
+  margin-top: 15px;
+  color: #424242;
+  font-weight: 450;
+}
+
+.main {
+    position: absolute;
+    left:325px; top:92px; right:0; bottom:0;
+}
+
+.main-header{
+  text-align: center;
+  margin-top: 15px;
+  color: #424242;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.card-group{
+  margin-top: 25px;
+  width: 85%;
+  margin-left: 75px;
+}
+
+.card-img-top{
+  height: 50%;
+  width:100%;
+  border-radius: 1%;
+  display: inline-block;
+}
+
+.card-title{
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.card{
+  float: left;
+  width: 300px;
+  height: 450px;
+}
+
+.card-text{
+  margin-top: -5px;
+  font-weight: 300;
+}
+
+.npbutton{
+  margin-top: -5px;
+}
+
+.tags{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.vl {
+    border-left: 1px solid grey;
+    height: 100%;
+    position: fixed;
+    left: 25%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.add-on .input-group-btn > .btn {
+  border-left-width: 1px;
+  border-color: #cccccc;
+  margin-top: 10px;
+}
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+ box-shadow:none;
+ -webkit-box-shadow:none;
+ border-color:#cccccc;
+}
+
+.form-control{
+  width: 30%;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.leftcheckbox{
+  margin-left: 40px;
+  line-height: 30px;
+}
+.causename{
+  margin-left: 5px;
+}
+
+.skillname{
+  margin-left: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.Container {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    margin-top: -100px;
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    backface-visibility: hidden;
+    will-change: overflow;
+}
