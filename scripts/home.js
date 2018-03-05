@@ -38,6 +38,7 @@ function validateSignup(){
 function validateLogin(){
     let password = document.getElementById('login-pass');
     let email = document.getElementById('login-email');
+    let form = document.getElementById("login-form");
 
     if (!password.value || !isValidEmail(email.value)){
         event.preventDefault();
@@ -61,6 +62,15 @@ function validateLogin(){
         if (!document.getElementById('loginEmailValidation')){
             email.parentElement.insertBefore(emailValidation, email.nextSibling);
         }
+    }
+
+    if(email.value == 'pm@pm.com')
+    {
+     form.action ="pm.html";
+    }
+    else
+    {
+      form.action ="dashboard.html";
     }
 }
 
