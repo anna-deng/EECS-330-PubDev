@@ -8,6 +8,8 @@
   <link href="css/dashboard.css" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -24,8 +26,15 @@
           <li class="nav-item">
             <a class="nav-link"href="nonprofdirectory.html">Search</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link"href="signup.html">Profile</a>
+          <li class="dropdown nav-item">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Profile
+                  <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Inbox</a></li>
+                  <li><a href="#" class="dropdown-item">Edit Profile</a></li>
+                  <li><a href="index.html"class="dropdown-item">Logout</a></li>
+              </ul>
           </li>
         </ul>
       </div>
