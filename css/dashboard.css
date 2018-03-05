@@ -89,7 +89,7 @@
 }
 
 .proj-list-itm {
-  font-weight: 100;
+  font-weight: 300;
   display: list-item;          /* This has to be "list-item"                                               */
   list-style-type: disc;
 	cursor: pointer;
@@ -123,6 +123,11 @@
 
 #submit {
 	display: block;
+	margin: auto;
+	width: 50%;
+}
+
+.tags {
 	margin: auto;
 	width: 50%;
 }

@@ -3,23 +3,12 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Dashboard</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
+  <title>Project Manager Dashboard</title>
   <link href="css/index.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/dashboard.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-
+  <link href="css/dashboard.css" rel="stylesheet">
 </head>
 
 <body>
@@ -119,56 +108,84 @@
     </div>
   </div>
 
+
+
+
+<!-- MAIN FILE -->
   <div class="container">
     <div class="padding"></div>
-    <h1 class="welcome">Welcome, Developer</h1>
+    <h1 class="welcome">Welcome, Project Manager</h1>
     <div class="padding"></div>
-
-    <div>
-      <h4 style="font-weight:400; font-size:30px;">My Projects</h4>
-    </div>
-
-    <div id="projectbox">
-      <div class="proj-heading">
-        <img class="proj-img" src="img/boyscouts.jpg">
-        <h3 class="proj-title">Troop 75 Website</h3>
-      </div>
-
-
-      <div class="container">
-        <div class="btn-container">
-          <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
-          <a class="btn btn-default btn-primary" href="https://github.com/">GitHub</a>
-          <a class="btn btn-default btn-primary" href="profile.html">NonProfit Page</a>
+    <div class="row">
+      <div class="col-7">
+        <div>
+          <h4 style="font-weight:400; font-size:30px;">My Projects</h4>
         </div>
 
-
-        <div class="row">
-          <div class="col-sm-6">
-            <h4>MY TASKS</h4>
-            <ul id="taskList" class="proj-list">
-              <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal1">Build Kettlecorn Purchase Form</li>
-              <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal2">Fill in Scoutmaster Bios</li>
-              <li class="proj-list-itm" data-toggle="modal" data-target="#modal3">Embed Troop Video to Homepage</li>
-            </ul>
-
-
-            <h4>OPEN TASKS</h4>
-            <ul id="openList" class="proj-list">
-              <li id="contact" class="proj-list-itm" data-toggle="modal" data-target="#modal4">Update Contact Information</li>
-              <li id="calendar" class="proj-list-itm" data-toggle="modal" data-target="#modal5">Create Community Calendar</li>
-            </ul>
+        <div id="projectbox">
+          <div class="proj-heading">
+            <img class="proj-img" src="img/boyscouts.jpg">
+            <h3 class="proj-title">Troop 75 Website</h3>
           </div>
-          <div class="col-md-6">
-            <div>
-              <h4>MEMBERS</h4>
-              <ul class="proj-list">
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Pinski [Project Manager]</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Segal</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Smith</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Hendrix</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Podis</li>
-              </ul>
+
+
+          <div class="container">
+            <div class="btn-container">
+              <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
+              <a class="btn btn-default btn-primary" href="https://github.com/">GitHub</a>
+              <a class="btn btn-default btn-primary" href="profile.html">NonProfit Page</a>
+            </div>
+
+
+            <div class="row">
+              <div class="col-sm-6">
+                <h4>MY TASKS</h4>
+                <ul id="taskList" class="proj-list">
+                  <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal1">Build Kettlecorn Purchase Form</li>
+                  <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal2">Fill in Scoutmaster Bios</li>
+                  <li class="proj-list-itm" data-toggle="modal" data-target="#modal3">Embed Troop Video to Homepage</li>
+                </ul>
+
+
+                <h4>OPEN TASKS</h4>
+                <ul id="openList" class="proj-list">
+                  <li id="contact" class="proj-list-itm" data-toggle="modal" data-target="#modal4">Update Contact Information</li>
+                  <li id="calendar" class="proj-list-itm" data-toggle="modal" data-target="#modal5">Create Community Calendar</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <h4>MEMBERS</h4>
+                  <ul class="proj-list">
+                    <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Pinski [Project Manager]</li>
+                    <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Segal</li>
+                    <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Smith</li>
+                    <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Hendrix</li>
+                    <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Podis</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+      </div>
+      <div class="col-4">
+        <div class="row">
+          <h4 style="font-weight:400; font-size:30px;">Open Projects</h4>
+          <div id="npcard" class="card">
+            <img class="card-img-top" src="img/nonprofits1.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title" style="text-align:center;">Chicago Cares</h4>
+              <p class="card-text" style="text-align:center;">Chicago Cares partners with community organizations, schools and parks, allowing them to better achieve their missions.</p>
+              <div style="text-align:center;" class="npbutton">
+                <a href="nonprofit.html" class="btn btn-primary">Visit Page</a>
+              </div>
+              <div class="tags">
+                <span class="badge badge-primary causetag" id="npcause">Women's Rights</span>
+                <span class="badge badge-primary skilltag" id="npskill">Node.js</span>
+              </div>
             </div>
           </div>
         </div>
@@ -176,15 +193,20 @@
     </div>
   </div>
   <div class="padding"></div>
+</div>
 
 
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
-    </div>
-  </footer>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="dashboard.js"></script>
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
+  </div>
+</footer>
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="dashboard.js"></script>
+
+
 </body>
 </html>
