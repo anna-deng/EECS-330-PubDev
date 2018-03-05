@@ -1,9 +1,9 @@
 body {
-  font-family: 'Lato';
+   font-family: 'Nunito', sans-serif;
 }
 
 h1 {
-  font-family: 'Catamaran';
+ font-family: 'Muli', sans-serif;
   font-weight: 100;
 }
 
@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran';
+  font-family: 'Muli', sans-serif;
   font-weight: 100;
 }
 
@@ -57,7 +57,7 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  background: linear-gradient(0deg, #6A5ACD 0%, #000000 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -71,6 +71,7 @@ header.masthead .masthead-content {
 
 header.masthead .masthead-content .masthead-heading {
   font-size: 4rem;
+  font-weight: bold;
 }
 
 header.masthead .masthead-content .masthead-subheading {
@@ -81,7 +82,7 @@ header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+  background: linear-gradient(0deg, #6A5ACD 0%, #000000 100%);
 }
 
 header.masthead .bg-circle-1 {
@@ -132,6 +133,8 @@ header.masthead .bg-circle-4 {
 .btn-primary {
   background-color: #ee0979;
   border-color: #ee0979;
+  display: inline-block;
+
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -156,3 +159,14 @@ header.masthead .bg-circle-4 {
 .btn-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
 }
+
+.testimonial-pic {
+  height: 460px !important;
+  width: 460px !important;
+}
+
+.testimonial-pic2 {
+  height: 440px;
+  width: 530px;
+}
+
