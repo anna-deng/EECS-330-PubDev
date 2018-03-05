@@ -60,90 +60,76 @@
 <div class="Container">
   <div class="left">
     <ul>
+
       <li>
-      <h4 class='left-header'> SEARCH BY:</h4>
-    <div class="container">
-    <div class="input-group add-on">
-      <input class="form-control" placeholder="Name" name="srch-term" id="srch-term" type="text">
-      <div class="input-group-btn">
-        <button class="btn btn-default" onclick="filtercards()">
-            <i class="material-icons">search</i>
-        </button>
-      </div>
-    </div>
+        <h4 class='left-header'> Cause</h4>
+          <div id="causecheck" class="leftcheckbox">
+            <input type="checkbox" class="causecheck" value="" onchange="filtercards()"><label class="causename">Animal Rights</label>
+          </div>
+          <div id="causecheck" class="leftcheckbox">
+            <input type="checkbox" class="causecheck" value="" onchange="filtercards()"><label class="causename">Poverty</label>
+          </div>
+          <div id="causecheck" class="leftcheckbox">
+            <input type="checkbox" class="causecheck" value="" onchange="filtercards()"><label class="causename">Climate Change</label>
+          </div>
+          <div id="causecheck" class="leftcheckbox">
+            <input type="checkbox" class="causecheck" value="" onchange="filtercards()"><label class="causename">Women's Rights</label>
+          </div>
+          <div id="causecheck" class="leftcheckbox">
+            <input type="checkbox" class="causecheck" value="" onchange="filtercards()"><label class="causename">Racial Equality</label>
+          </div>
+      </li>
+
+      <li>
+        <h4 class='left-header'> Skill</h4>
+          <div id="skillcheck" class="leftcheckbox">
+            <input type="checkbox" class="skillcheck" value="" onchange="filtercards()"><label class="skillname">Node.js</label>
+          </div>
+          <div id="skillcheck" class="leftcheckbox">
+            <input type="checkbox" class="skillcheck" value="" onchange="filtercards()"><label class="skillname">Python</label>
+          </div>
+          <div id="skillcheck" class="leftcheckbox">
+            <input type="checkbox" class="skillcheck" value="" onchange="filtercards()"><label class="skillname">Remit.js</label>
+          </div>
+          <div id="skillcheck" class="leftcheckbox">
+            <input type="checkbox" class="skillcheck" value="" onchange="filtercards()"><label class="skillname">Angular.js</label>
+          </div>
+      </li>
+
+      <li>
+        <h4 class='left-header'> Time Commitment</h4>
+          <div class="leftcheckbox">
+            <label><input type="checkbox" value="" onchange="filtercards()">&lt5 hours/week</label>
+          </div>
+          <div class="leftcheckbox">
+            <label><input type="checkbox" value="" onchange="filtercards()">&lt10 hours/week</label>
+          </div>
+          <div class="leftcheckbox">
+            <label><input type="checkbox" value="" onchange="filtercards()">&lt20 hours/week</label>
+          </div>
+          <div class="leftcheckbox">
+            <label><input type="checkbox" value="" onchange="filtercards()">&lt40 hours/week</label>
+          </div>
+      </li>
   </div>
-</li>
-
-<li>
-  <h4 class='left-header'> Cause</h4>
-    <div id="causecheck" class="leftcheckbox">
-      <input type="checkbox" class="causecheck" value=""><label class="causename">Animal Rights</label>
-    </div>
-    <div id="causecheck" class="leftcheckbox">
-      <input type="checkbox" class="causecheck" value=""><label class="causename">Poverty</label>
-    </div>
-    <div id="causecheck" class="leftcheckbox">
-      <input type="checkbox" class="causecheck" value=""><label class="causename">Climate Change</label>
-    </div>
-    <div id="causecheck" class="leftcheckbox">
-      <input type="checkbox" class="causecheck" value=""><label class="causename">Women's Rights</label>
-    </div>
-    <div id="causecheck" class="leftcheckbox">
-      <input type="checkbox" class="causecheck" value=""><label class="causename">Racial Equality</label>
-    </div>
-</li>
-
-<li>
-  <h4 class='left-header'> Skill</h4>
-    <div id="skillcheck" class="leftcheckbox">
-      <input type="checkbox" class="skillcheck" value=""><label class="skillname">Node.js</label>
-    </div>
-    <div id="skillcheck" class="leftcheckbox">
-      <input type="checkbox" class="skillcheck" value=""><label class="skillname">Python</label>
-    </div>
-    <div id="skillcheck" class="leftcheckbox">
-      <input type="checkbox" class="skillcheck" value=""><label class="skillname">Remit.js</label>
-    </div>
-    <div id="skillcheck" class="leftcheckbox">
-      <input type="checkbox" class="skillcheck" value=""><label class="skillname">Angular.js</label>
-    </div>
-
-</li>
-
-<li>
-  <h4 class='left-header'> Time Commitment</h4>
-    <div class="leftcheckbox">
-      <label><input type="checkbox" value="">&lt5 hours/week</label>
-    </div>
-    <div class="leftcheckbox">
-      <label><input type="checkbox" value="">&lt10 hours/week</label>
-    </div>
-    <div class="leftcheckbox">
-      <label><input type="checkbox" value="">&lt20 hours/week</label>
-    </div>
-    <div class="leftcheckbox">
-      <label><input type="checkbox" value="">&lt40 hours/week</label>
-    </div>
-</li>
-</div>
 </div>
 
  <div class="main">
      <h4 class="main-header">NON-PROFIT DIRECTORY</h4>
      <div class="card-group">
-     <div id="npcard" class="card">
-        <img class="card-img-top" src="img/nonprofits1.jpeg" alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title" style="text-align:center;">Chicago Cares</h4>
-            <p class="card-text" style="text-align:center;">Chicago Cares partners with community organizations, schools and parks, allowing them to better achieve their missions.</p>
-            <div style="text-align:center;" class="npbutton">
-              <a href="nonprofit.html" class="btn btn-primary">Visit Page</a>
+        <div id="npcard" class="card">
+            <img class="card-img-top" src="img/nonprofits1.jpeg" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title" style="text-align:center;">Chicago Cares</h4>
+                <p class="card-text" style="text-align:center;">Chicago Cares partners with community organizations, schools and parks, allowing them to better achieve their missions.</p>
+                <div style="text-align:center;" class="npbutton">
+                  <a href="nonprofit.html" class="btn btn-primary">Visit Page</a>
+                </div>
+                <div class="tags">
+                <span class="badge badge-primary causetag" id="npcause">Women's Rights</span>
+                <span class="badge badge-primary skilltag" id="npskill">Node.js</span>
+              </div>
             </div>
-            <div class="tags">
-            <span class="badge badge-primary causetag" id="npcause">Women's Rights</span>
-            <span class="badge badge-primary skilltag" id="npskill">Node.js</span>
-          </div>
-        </div>
         </div>
 
         <div id="npcard" class="card">
@@ -162,19 +148,19 @@
                   </div>
 
                   <div id="npcard" class="card">
-                             <img class="card-img-top" src="img/nonprofits3.jpg" alt="Card image cap">
-                               <div class="card-block">
-                                 <h4 class="card-title" style="text-align:center;">Elevated Chicago</h4>
-                                 <p class="card-text" style="text-align:center;">Elevated Chicago's goal is to strengthen racial equity in Chicago by using equitable transit-oriented development.</p>
-                                 <div style="text-align:center;" class="npbutton">
-                                   <a href="nonprofit.html" class="btn btn-primary">Visit Page</a>
-                                 </div>
-                                 <div class="tags">
-                                 <span class="badge badge-primary causetag" id="npcause">Racial Equality</span>
-                                 <span class="badge badge-primary skilltag" id="npskill">Remit.js</span>
-                               </div>
-                             </div>
-                            </div>
+                    <img class="card-img-top" src="img/nonprofits3.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title" style="text-align:center;">Elevated Chicago</h4>
+                        <p class="card-text" style="text-align:center;">Elevated Chicago's goal is to strengthen racial equity in Chicago by using equitable transit-oriented development.</p>
+                        <div style="text-align:center;" class="npbutton">
+                          <a href="nonprofit.html" class="btn btn-primary">Visit Page</a>
+                        </div>
+                        <div class="tags">
+                        <span class="badge badge-primary causetag" id="npcause">Racial Equality</span>
+                        <span class="badge badge-primary skilltag" id="npskill">Remit.js</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
  </div>
 
