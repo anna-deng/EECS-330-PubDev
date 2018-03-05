@@ -4,8 +4,13 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Dashboard</title>
+<<<<<<< HEAD
 
   <!-- Bootstrap core CSS -->
+=======
+  <link href="css/index.min.css" rel="stylesheet">
+  <link href="css/dashboard.css" rel="stylesheet">
+>>>>>>> 5f3e5347214e554d89b4351ad8cf8abcfb434999
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   
   <!-- Custom fonts for this template -->
@@ -53,41 +58,70 @@
   </nav>
 
   <!-- MODALS -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
+  <div id="modal1" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h2>Build Kettlecorn Purchase Form</h2>
         <h4>Deadline: 4/4/18</h4>
         <p>Every year the Boy Scouts sell Kettlecorn as a fundraiser.  We need to implement a purchase form for customers looking to buy kettlecorn from Troop 75.  The specifics on cost and types of kettlecorn can be found with Ben.  If you have any questions, contact Ben.  Let's sell some corn!</p>
+      </div>
     </div>
   </div>
-  <div id="modal2" class="modal">
-    <div class="modal-content">
+  <div id="modal2" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h2>Fill in Scoutmaster Bios</h2>
         <h4>Deadline: 4/8/18</h4>
         <p>In the GitHub, there is a document with a short bio for each of the scoutmasters.  Please adjust the "About Us" page to accomodate these new bios.</p>
+      </div>
     </div>
   </div>
-  <div id="modal3" class="modal">
-    <div class="modal-content">
+  <div id="modal3" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h2>Embed Troop Video to Homepage</h2>
         <h4>Deadline: 4/9/18</h4>
         <p>Troop 75 filmed a short video from our hike up Mt. Washington last Thursday.  Please embed this video on the "Troop Trips" page with a short description of the activity.</p>
+      </div>
     </div>
   </div>
-  <div id="modal4" class="modal">
-    <div class="modal-content">
+  <div id="modal4" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h2>Update Contact Information</h2>
         <h4>Deadline: 4/15/18</h4>
         <p>Since they're taking down the old community building, Troop 75 will be meeting at the elementary school on Bow Center Road.  Please adjust the contact information accordingly.</p>
         <button onclick="claimTask('contact', this.id)">Claim Task</button>
+      </div>
     </div>
   </div>
-  <div id="modal5" class="modal">
-    <div class="modal-content">
+  <div id="modal5" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h2>Create Community Calendar</h2>
         <h4>Deadline: 4/20/18</h4>
         <p>We have a lot of events in our troop and are hoping to make it easier for parents and scouts to get on board with upcoming events.  Please develop a calendar that can display troop events on our website.</p>
         <button onclick="claimTask('calendar')">Claim Task</button>
+      </div>
+    </div>
+  </div>
+  <div id="modal6" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <form>
+          <h4 class="contact-head">Send Message</h4>
+          <div class="contact-field">
+            <textarea class="contact-text" placeholder="Message here..." rows="4" cols="50"></textarea>
+          </div>
+          <button id="submit" class="btn btn-default btn-primary" onclick="sendMessage()">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -135,11 +169,11 @@
             <div>
               <h4>MEMBERS</h4>
               <ul class="proj-list">
-                <li class="proj-list-itm">Ben Pinski [Project Manager]</li>
-                <li class="proj-list-itm">Ben Segal</li>
-                <li class="proj-list-itm">Ben Smith</li>
-                <li class="proj-list-itm">Ben Hendrix</li>
-                <li class="proj-list-itm">Ben Podis</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Pinski [Project Manager]</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Segal</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Smith</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Hendrix</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Podis</li>
               </ul>
             </div>
           </div>

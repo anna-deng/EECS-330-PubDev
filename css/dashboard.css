@@ -50,9 +50,6 @@
 	display: none;
 	position: fixed;
 	z-index: 1;
-	padding: 15%;
-	left: 0;
-	top: 0;
 	width: 100%;
 	height: 100%;
 	overflow: auto;
@@ -62,10 +59,10 @@
 
 .modal-content {
 	background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
+    margin-top: 15%;
+    margin-left: 2%;
     border: 1px solid #888;
-    width: 100%;
+    padding: 20px;
 }
 
 .close {
@@ -107,4 +104,25 @@
 .card-btn {
 	width: 50%;
 	margin: 0 auto;
+}
+
+#close {
+	font-weight: bold;
+	text-align: right;
+	font-size:	25px;
+}
+
+.contact-head {
+	text-align: center;
+}
+
+.contact-field {
+	margin: auto;
+	width: 83%;
+}
+
+#submit {
+	display: block;
+	margin: auto;
+	width: 50%;
 }
