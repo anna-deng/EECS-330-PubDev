@@ -160,13 +160,12 @@ header.masthead .bg-circle-4 {
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
 }
 
-.testimonial-pic {
-  height: 460px !important;
-  width: 460px !important;
+.testimonial-pictures {
+  border-radius: 50%;
 }
 
-.testimonial-pic2 {
-  height: 440px;
-  width: 530px;
+.spacer {
+    padding-left: 70px;
+    padding-right: 70px;
 }
 

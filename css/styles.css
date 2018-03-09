@@ -1,14 +1,18 @@
 body {
-    padding-top: 80px;
-  }
-  
-  @media (min-width: 992px) {
-    body {
-      padding-top: 100px;
-    }
-  }
+  padding-top: 94px;
+}
 
-  
-.dropdown{
-    margin-bottom:10px;
+@media (min-width: 992px) {
+  body {
+    padding-top: 96px;
+  }
+}
+
+.dropdown-item{
+  color: #484848;
+  font-family: "Arial";
+}
+
+a.dropdown-item{
+  text-decoration: none;
 }
