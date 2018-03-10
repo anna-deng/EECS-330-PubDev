@@ -46,7 +46,7 @@
 
 <div class="container">
     <h1 style="font-weight: 300;font-size:50px;">CHICAGO CARES</h1>
-    <div class="row">
+    <div class="row" style="height: 475px;">
         <div class="col-lg-8" >
             <div id="image-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -76,70 +76,78 @@
                 <li style="font-weight:400;">Chicago, IL</li>
                 <li>
                   <a href="https://www.chicagocares.org/">https://www.chicagocares.org/</a></li>
-                <li style="font-weight:400;">Contact: Sue Brown</li>
-                <form id="contactmodal" method="post" action="contact.php" role="form">
+                  <li style="margin-bottom: 5px;">
+                      <a href="#ourprojects" class="btn btn-primary">View Current Projects</a>
+                  </li>
+                <li style="font-weight:400;"><button href="#contactmodal" class="btn btn-primary nav-link" data-toggle="modal">Contact</button></li>
+                <div id="contactmodal" class="modal fade" data-backdrop="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Contact Chicago Cares</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      </div>
+                        <div class="modal-body">
+                          <form id="contactmodal" id="contactmodal" action="contact.php" role="form">
 
-    <div class="messages"></div>
+                              <div class="controls">
 
-    <div class="controls">
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="form_name">First *</label>
+                                              <input id="form_name" type="text" name="name" class="form-control" placeholder="First Name" required="required" data-error="Firstname is required.">
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="form_lastname">Last *</label>
+                                              <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Last Name" required="required" data-error="Lastname is required.">
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="form_email">Email *</label>
+                                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Valid email is required.">
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="form_phone">Phone</label>
+                                              <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Phone">
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <div class="form-group">
+                                              <label for="form_message">Message *</label>
+                                              <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-12">
+                                          <button class="btn btn-success btn-send" style="text-align:center;" id="submit" onclick="sendMessage()">Send message</button>
 
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_name">First *</label>
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Firstname" required="required" data-error="Firstname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_lastname">Last *</label>
-                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Lastname" required="required" data-error="Lastname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_email">Email *</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_phone">Phone</label>
-                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Phone">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="form_message">Message *</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for Sue" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <input type="submit" class="btn btn-success btn-send" value="Send message">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p class="text-muted"><strong>*</strong> These fields are required.</p>
-            </div>
-        </div>
-    </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                                      </div>
+                                  </div>
+                              </div>
 
-</form>
+                          </form>
+                        </div>
             </ul>
         </div>
-    </div>
-    <div style="margin-top: 50px; margin-bottom: 30px;">
-        <a href="#ourprojects" class="btn btn-primary">View Current Projects</a>
     </div>
     <div>
         <h2 style="font-weight:400;">Why We Matter?</h2>
@@ -192,6 +200,7 @@
 </footer>
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="dashboard.js"></script>
 
 </body>
 </html>
