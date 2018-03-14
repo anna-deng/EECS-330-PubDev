@@ -84,7 +84,7 @@
 .card{
   position: relative;
   float: left;
-  width: 33%;
+  width: 31%;
   height: 450px;
 }
 
@@ -152,6 +152,7 @@ ul {
     height: 100vh;
     margin-top: -100px;
     padding-top: 100px;
+    margin-bottom: 400px;
     position: relative;
     width: 100%;
     backface-visibility: hidden;

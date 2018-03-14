@@ -21,7 +21,7 @@
   <!-- Custom styles for this template -->
   <link href="css/index.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
+
   <link href="css/direct.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 
@@ -29,7 +29,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="height: 50px;">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
         <a class="navbar-brand" href="dashboard.html">PubDev</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,6 +70,7 @@
     <ul>
 
       <li>
+        <h3 style="text-align:center; color: dark grey">SEARCH BY:</h3>
         <h4 class='left-header'> Cause</h4>
           <div id="causecheck" class="leftcheckbox">
             <input type="checkbox" class="causecheck" value="" onchange="filtercards()"><label class="causename">Animal Rights</label>
@@ -107,16 +108,16 @@
       <li>
         <h4 class='left-header'> Time Commitment</h4>
           <div class="leftcheckbox">
-            <label><input type="checkbox" value="" onchange="filtercards()">&lt5 hours/week</label>
+            <input type="checkbox" class="timecheck" value="" onchange="filtercards()"><label class="timename">&lt5 hours/week</label>
           </div>
           <div class="leftcheckbox">
-            <label><input type="checkbox" value="" onchange="filtercards()">&lt10 hours/week</label>
+            <input type="checkbox" class="timecheck" value="" onchange="filtercards()"><label class="timename">&lt10 hours/week</label>
           </div>
           <div class="leftcheckbox">
-            <label><input type="checkbox" value="" onchange="filtercards()">&lt20 hours/week</label>
+            <input type="checkbox" class="timecheck" value="" onchange="filtercards()"><label class="timename">&lt20 hours/week</label>
           </div>
           <div class="leftcheckbox">
-            <label><input type="checkbox" value="" onchange="filtercards()">&lt40 hours/week</label>
+            <input type="checkbox" class="timecheck" value="" onchange="filtercards()"><label class="timename">&lt40 hours/week</label>
           </div>
       </li>
   </div>
@@ -124,9 +125,9 @@
 
  <div class="main">
      <h4 class="main-header">NON-PROFIT DIRECTORY</h4>
-     <div class="card-group">
-        <div id="npcard" class="card">
-            <img class="card-img-top" src="img/nonprofits1.jpeg" alt="Card image cap">
+     <!--<div class="card-group">-->
+        <div id="npcard" class="card" style="margin-left:10px; margin-top:10px; border-radius:5px;">
+            <img class="card-img-top" style="border-radius:5px;" src="img/nonprofits1.jpeg" alt="Card image cap">
               <div class="card-block">
                 <h4 class="card-title" style="text-align:center;">Chicago Cares</h4>
                 <p class="card-text" style="text-align:center;">Chicago Cares partners with community organizations, schools and parks, allowing them to better achieve their missions.</p>
@@ -136,12 +137,13 @@
                 <div class="tags">
                 <span class="badge badge-primary causetag" id="npcause">Women's Rights</span>
                 <span class="badge badge-primary skilltag" id="npskill">Node.js</span>
+                <span class="badge badge-primary timetag" id="nptime">&lt5 hours/week</span>
               </div>
             </div>
         </div>
 
-        <div id="npcard" class="card">
-                   <img class="card-img-top" src="img/nonprofits2.jpg" alt="Card image cap">
+        <div id="npcard" class="card" style="margin-left:10px; margin-top:10px; border-radius:5px;">
+                   <img class="card-img-top" style="border-radius:5px;" src="img/nonprofits2.jpg" alt="Card image cap">
                      <div class="card-block">
                        <h4 class="card-title" style="text-align:center;">Helping Hand</h4>
                        <p class="card-text" style="text-align:center;">Helping Hand creates sustainable livelihoods and job opportunities for people with barriers to employment.</p>
@@ -151,12 +153,13 @@
                        <div class="tags">
                        <span class="badge badge-primary causetag" id="npcause">Poverty</span>
                        <span class="badge badge-primary skilltag" id="npskill">Python</span>
+                       <span class="badge badge-primary timetag" id="nptime">&lt20 hours/week</span>
                      </div>
                    </div>
                   </div>
 
-                  <div id="npcard" class="card">
-                    <img class="card-img-top" src="img/nonprofits3.jpg" alt="Card image cap">
+                  <div id="npcard" class="card" style="margin-left:10px;  margin-top:10px;border-radius:5px;">
+                    <img class="card-img-top" style="border-radius:5px;" src="img/nonprofits3.jpg" alt="Card image cap">
                       <div class="card-block">
                         <h4 class="card-title" style="text-align:center;">Elevated Chicago</h4>
                         <p class="card-text" style="text-align:center;">Elevated Chicago's goal is to strengthen racial equity in Chicago by using equitable transit-oriented development.</p>
@@ -166,18 +169,62 @@
                         <div class="tags">
                         <span class="badge badge-primary causetag" id="npcause">Racial Equality</span>
                         <span class="badge badge-primary skilltag" id="npskill">Remit.js</span>
+                        <span class="badge badge-primary timetag" id="nptime">&lt10 hours/week</span>
                       </div>
                     </div>
                   </div>
-                </div>
- </div>
+                  <div id="npcard" class="card" style="margin-left:10px; margin-top:10px; border-radius:5px;">
+                    <img class="card-img-top" style="border-radius:5px;" src="img/nonprofits6.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title" style="text-align:center;">The Night Ministry</h4>
+                        <p class="card-text" style="text-align:center;">The Night Ministry works to provide housing and health care to members of our community struggling with poverty.</p>
+                        <div style="text-align:center;" class="npbutton">
+                          <a href="nonprofit.html" class="btn btn-primary">Visit Page</a>
+                        </div>
+                        <div class="tags">
+                        <span class="badge badge-primary causetag" id="npcause">Poverty</span>
+                        <span class="badge badge-primary skilltag" id="npskill">Python</span>
+                        <span class="badge badge-primary timetag" id="nptime">&lt5 hours/week</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="npcard" class="card" style="margin-left:10px; margin-top:10px; border-radius:5px;">
+                    <img class="card-img-top" style="border-radius:5px;" src="img/nonprofits7.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title" style="text-align:center;">Latinos Progresando</h4>
+                        <p class="card-text" style="text-align:center;">Latinos Progresando provides professional, affordable immigration legal services to thousands of families every year.</p>
+                        <div style="text-align:center;" class="npbutton">
+                          <a href="nonprofit.html" class="btn btn-primary">Visit Page</a>
+                        </div>
+                        <div class="tags">
+                        <span class="badge badge-primary causetag" id="npcause">Racial Equality</span>
+                        <span class="badge badge-primary skilltag" id="npskill">Remit.js</span>
+                        <span class="badge badge-primary timetag" id="nptime">&lt40 hours/week</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="npcard" class="card" style="margin-left:10px; margin-top:10px; border-radius:5px;">
+                    <img class="card-img-top" style="border-radius:5px;" src="img/nonprofits8.jpg" alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title" style="text-align:center;">Link Unlimited</h4>
+                        <p class="card-text" style="text-align:center;">Link Unlimited connects disadvantaged African American students with mentors, resources, and skills for success.</p>
+                        <div style="text-align:center;" class="npbutton">
+                          <a href="nonprofit.html" class="btn btn-primary">Visit Page</a>
+                        </div>
+                        <div class="tags">
+                        <span class="badge badge-primary causetag" id="npcause">Racial Equality</span>
+                        <span class="badge badge-primary skilltag" id="npskill">Node.js</span>
+                        <span class="badge badge-primary timetag" id="nptime">&lt40 hours/week</span>
+                      </div>
+                    </div>
+                  </div>
+          </div>
 
- <footer class="py-5 bg-black">
-   <div class="container">
-     <p class="m-0 text-center text-white small">Copyright &copy; PubDev 2018</p>
-   </div>
-   <!-- /.container -->
- </footer>
+          <footer class="py-5 bg-dark">
+              <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
+              </div>
+          </footer>
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="scripts/direct.js"></script>

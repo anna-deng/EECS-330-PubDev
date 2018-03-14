@@ -16,6 +16,10 @@ function filtercards(){
         return check.checked;
     })
 
+    var timeChecks = Array.from(document.getElementsByClassName('timecheck')).filter(function(check){
+        return check.checked;
+    })
+
     causeChecks = causeChecks.map(function(check){
         return check.nextSibling.innerHTML
     })
@@ -24,13 +28,18 @@ function filtercards(){
         return check.nextSibling.innerHTML
     })
 
+    timeChecks = timeChecks.map(function(check){
+        return check.nextSibling.innerHTML
+    })
+
     //empty search returns all cards
-    if (skillChecks.length + causeChecks.length == 0){
+    if (skillChecks.length + causeChecks.length + timeChecks.length== 0){
         return;
     }
 
     var filteredByCause = [];
     var filteredBySkill = [];
+    var filteredByTime = [];
 
     //filter by causes
     for (let i = 0; i<cards.length; i++) {
@@ -64,8 +73,23 @@ function filtercards(){
         }
     }
 
+    for (let i = 0; i<cards.length; i++) {
+        var mycardblock = cards[i].querySelector('.card-block')
+        var myTimeTags = Array.from(mycardblock.querySelectorAll('.timetag'));
+        myTimeTags = myTimeTags.map(function(tag){
+            return tag.innerHTML;
+        })
+        notRemove = myTimeTags.some(function(tag){
+            return timeChecks.includes(tag)
+        })
+        if (notRemove){
+            filteredByTime.push(cards[i]);
+        }
+    }
+
     //concatenate separate filters and filter out overlaps
     var filteredByAll = filteredBySkill.concat(filteredByCause)
+    filteredByAll = filteredByAll.concat(filteredByTime)
     filteredByAll = Array.from(new Set(filteredByAll));
 
     //get set difference from cards

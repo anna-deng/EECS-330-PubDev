@@ -89,9 +89,13 @@ function validateLogin(){
         }
     }
 
-    if(email.value == 'pm@pm.com')
+    if(email.value === 'nonprof@np.com')
     {
-     form.action ="pm.html";
+     form.action = "nonprofitdash.html";
+    }
+    else if(email.value === 'pm@pm.com')
+    {
+     form.action = "pm.html";
     }
     else
     {
