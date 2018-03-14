@@ -23,3 +23,5 @@ skillsDropdown.onchange = function(){
 causesDropdown.onchange = function(){
     causesBox.value = causesBox.value  + this.value + ", ";
 }
+
+

@@ -35,10 +35,10 @@
         </div>
     </nav>
     <div class="container">
-        <h2>Developer Account Signup</h2>
+        <h2>Nonprofit Account Signup</h2>
         <form action="">
             <div class="form-group">
-                <label for="Name">Name</label>
+                <label for="Name">Name of Organization</label>
                 <input type="Name" class="form-control" id="devname" name="name" disabled>
             </div>
             <div class="form-group">
@@ -46,11 +46,11 @@
                 <input type="email" class="form-control" id="devemail" name="email" disabled>
             </div>
             <div class="form-group">
-                <label for="bio">About me</label>
+                <label for="bio">About Organization</label>
                 <textarea class="form-control" id="bio" rows="3"></textarea>
             </div>
             <div class="form-group">
-                <label for ="skills">Skills</label><br>
+                <label for ="skills">Skills Needed</label><br>
                 <select id=skills-dropdown class="dropdown">
                     <optgroup label="Frontend">
                         <option>HTML</option>
@@ -69,7 +69,7 @@
                 <textarea class="form-control" id="skills" readonly></textarea>
             </div>
             <div class="form-group">
-                    <label for ="causes">Causes I am interested in:</label><br>
+                    <label for ="causes">Causes Promoted by Organization</label><br>
                     <select id=causes-dropdown class="dropdown">
                         <option>Women's Rights</option>
                         <option>Climate Change</option>
@@ -80,18 +80,15 @@
                     <textarea class="form-control" id="causes" readonly></textarea>
             </div>
             <div class="form-group">
-                <label for="portfolio">Portfolio Link:</label>
-                <input type="portfolio" class="form-control" id="name" placeholder="" name="portfolio">
+                <label for="portfolio">Link to Slack Group</label>
+                <input type="portfolio" class="form-control" id="name" placeholder="" name="slack">
             </div>
             <div class="form-group">
-                <label for="github">GitHub Username:</label>
+                <label for="github">Link to Github Page</label>
                 <input type="github" class="form-control" id="github" placeholder="" name="github">
             </div>
-            <div class="form-group">
-                <label for="portfolio">LinkedIn Username:</label>
-                <input type="linkedin" class="form-control" id="linkedin" placeholder="" name="linkedin">
-            </div>
-            <a class="btn btn-default btn-primary submit-signup" href="newdeveloper.html">Submit</a>
+            
+            <a class="btn btn-default btn-primary submit-signup" href="newnonprofit.html">Submit</a>
         </form>
     </div>
 
