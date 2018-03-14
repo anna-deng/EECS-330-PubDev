@@ -25,6 +25,7 @@ function validateSignup(){
     let name = document.getElementById('signup-name');
     let email = document.getElementById('signup-email');
     let password = document.getElementById('signup-pass');
+    let form = document.getElementById("signup-form");
 
     if (!name.value || !password.value || !isValidEmail(email.value)){
         event.preventDefault();
@@ -55,9 +56,19 @@ function validateSignup(){
         if (!document.getElementById('signupEmailValidation')){
             email.parentElement.insertBefore(emailValidation, email.nextSibling);
         }
+
+      }
+
+      if(document.getElementById('nonprofbut').checked) {
+          form.action = "nonprofitsignup.html";
+      }
+      else
+      {
+          form.action = "signup.html";
+      }
     }
 
- 
+
 
 
 function validateLogin(){
