@@ -1,24 +1,24 @@
-(function ($) {
-  $(document).ready(function(){
+// (function ($) {
+//   $(document).ready(function(){
 
-    // hide .navbar first
-    $(".navbar").hide();
+//     // hide .navbar first
+//     $(".navbar").hide();
 
-    // fade in .navbar
-    $(function () {
-        $(window).scroll(function () {
+//     // fade in .navbar
+//     $(function () {
+//         $(window).scroll(function () {
 
-                 // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > 550) {
-                $('.navbar').fadeIn();
-            } else {
-                $('.navbar').fadeOut();
-            }
-        });
-    });
+//                  // set distance user needs to scroll before we start fadeIn
+//             if ($(this).scrollTop() > 550) {
+//                 $('.navbar').fadeIn();
+//             } else {
+//                 $('.navbar').fadeOut();
+//             }
+//         });
+//     });
 
-});
-  }(jQuery));
+// });
+//   }(jQuery));
 
 
 function validateSignup(){
@@ -56,7 +56,9 @@ function validateSignup(){
             email.parentElement.insertBefore(emailValidation, email.nextSibling);
         }
     }
-}
+
+ 
+
 
 function validateLogin(){
     let password = document.getElementById('login-pass');
