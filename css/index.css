@@ -169,3 +169,68 @@ header.masthead .bg-circle-4 {
     padding-right: 70px;
 }
 
+.project-button {
+ margin: auto;
+ display: block; 
+ margin-bottom: 30px;
+}
+
+.content {
+    width: 400px;
+  margin-left: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.content img {
+    margin-right: 50px;
+    float: left;
+}
+
+.homepage-steps{
+  height: 30px;
+  width: 30px;
+}
+
+
+.steps {
+  font-size: 200px;
+}
+
+.homepage-headers {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.project-icons{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  margin-bottom: -15px;
+}
+
+.new-nonprofit-text{
+  text-align: center;
+  font-size: 40px;
+  vertical-align: middle;
+  margin-top: 230px;
+  margin-bottom: 300px;
+}
+
+.subtext{
+  text-align: center;
+  font-size: 20px;
+  vertical-align: middle;
+ margin-bottom: 220px;
+ margin-top: -280px;
+
+}
+
+.submit-signup{
+  margin-bottom: 10px;
+}
+
+
+
+

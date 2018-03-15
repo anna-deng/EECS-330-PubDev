@@ -6,6 +6,13 @@
 
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+<!--From bootsnip-->
+
+
+
 </head>
 
 
@@ -27,6 +34,11 @@
 
     <!-- Custom styles for this template -->
     <link href="css/index.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   </head>
 
@@ -54,26 +66,25 @@
                     </div>
 
                     <div class="modal-body">
-                      <form id="signup-form" onsubmit="validateSignup()" action="signup.html" novalidate>
+                      <form id="signup-form" onsubmit="validateSignup()">
                         <!--from https://mdbootstrap.com/components/forms/-->
                         <div class="md-form">
-                            <i class="fa fa-envelope prefix grey-text"></i>
-                            <label>Name</label>
-                            <input type="text" id="signup-name" class="form-control">
+                            <labelstyle="margin-bottom:-5px;">Name</label>
+                            <input style="margin-bottom:5px;"  type="text" id="signup-name" class="form-control">
                         </div>
                         <div class="md-form">
                             <i class="fa fa-envelope prefix grey-text"></i>
-                            <label>Email</label>
-                            <input type="text" id="signup-email" class="form-control">
+                            <label style="margin-bottom:-5px;">Email</label>
+                            <input style="margin-bottom:5px;" type="text" id="signup-email" class="form-control">
                         </div>
                         <div class="md-form">
                             <i class="fa fa-lock prefix grey-text"></i>
-                            <label>Password</label>
+                            <label style="margin-bottom:-5px;" >Password</label>
                             <input type="password" id="signup-pass" class="form-control">
                         </div>
                         <div class="md-form">
-                          <input type="checkbox" name="user" value="developer">I am a Developer.<br>
-                          <input type="checkbox" name="user" value="nonprofit">I am a Non-Profit.
+                          <input type="radio" id="devbut" style="margin-top: 5px;" name="user" value="developer">  I am a Developer.<br>
+                          <input type="radio" id="nonprofbut" name="user" value="nonprofit">  I am a Nonprofit.
                         </div>
                         <div class="text-center">
                             <button type="submit" class="btn btn-default">Sign Up</button>
@@ -136,8 +147,9 @@
 
 
 <br>
-          <button type = "button" class="btn btn-primary btn-xl pull-left" href="#signup" class="nav-link" data-toggle="modal">Sign Up</button>
-          <button type = class="nav-link" data-toggle="modal" href="#login" class="btn btn-primary btn-xl pull-right">Log In</button>
+          <button type = "button" class="btn btn-primary btn-xl " class="nav-link" data-toggle="modal" href = "#signup" >Sign Up</button>
+
+          <button type = "button"  class="btn btn-primary btn-xl " class="nav-link" data-toggle="modal" href="#login" >Log In</button>
 
         </div>
       </div>
@@ -149,14 +161,18 @@
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/01.jpg" alt="">
+              <img class="img-fluid rounded-pill" src="img/01.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <h2 class="display-4">Nonprofit looking for developers?</h2>
+              <b class = "homepage-headers">PubDev for Nonprofits</b>
+              <p>PubDev presents a space for nonprofits to search for motivated developers based on skillsets and interests.</p>
+              <p> <i class="material-icons" style ="color:#6A5ACD;">&#xe876;</i> Create an account </p>
+              <p> <i class="material-icons" style ="color:#6A5ACD;">&#xe876;</i> Search developer directory using our filters </p>
+              <p> <i class="material-icons" style ="color:#6A5ACD;">&#xe876;</i> Get in touch through instant messaging </p>
+              <p> <i class="material-icons" style ="color:#6A5ACD;">&#xe876;</i> Expand your organization </p>
 
-              <p>PubDev presents a space for nonprofits to search for motivated developers based on skillsets and interests. At the intersection of a developer's interests and your preferred qualifications, we're sure you'll find developers worth collaborating with. Use our filters to search for developers that match what you're looking for and explore the large variety of profiles created by PubDev developers.</p>
 
             </div>
           </div>
@@ -169,15 +185,17 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
+              <img class="img-fluid rounded-pill"src="img/02.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6">
             <div class="p-5">
-              <h2 class="display-4">Looking to contribute to nonprofits?</h2>
-
-              <p>Whether you're just getting started or an experienced coder,
-                we're sure you'll match with a nonprofit on PubDev. Search for nonprofits based on your interests and reach out to project managers to secure positions on teams. Sign up today!</p>
+                 <b class= "homepage-headers"> PubDev for Developers </b>
+              <p>Whether you're just getting started or an experienced coder, we're sure you'll match with a nonprofit on PubDev.</p>
+              <p> <i class="material-icons" style ="color:#6A5ACD;">&#xe876;</i>  Create an account </p>
+              <p> <i class="material-icons" style ="color:#6A5ACD;">&#xe876;</i> Search nonprofit directory based on your interests </p>
+              <p> <i class="material-icons" style ="color:#6A5ACD;">&#xe876;</i> Apply for projects linked to the nonprofit you choose </p>
+              <p> <i class="material-icons" style ="color:#6A5ACD;">&#xe876;</i> Join a team and work with other developers </p>
             </div>
           </div>
         </div>
@@ -189,20 +207,28 @@
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/03.jpg" alt="">
+              <img class="img-fluid rounded-pill" src="img/03.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <h2 class="display-4">Collaboration is key</h2>
-              <p>Whether you're just getting started or an experienced coder, we're sure you'll match with a nonprofit on PubDev. Search for nonprofits based on your interests and reach out to project managers to secure positions on teams. Simply fill out a basic profile and indicate your interests once you sign up.</p>
+                <b class = "homepage-headers"> PubDev for Project Managers</b>
+              <p> Take control of your projects. Anytime. Anywhere.</p>
+              <p> <i class="material-icons" style ="color:#6A5ACD;">&#xe876;</i> Create an account </p>
+              <p> <i class="material-icons" style ="color:#6A5ACD;">&#xe876;</i> Apply to manage a development project</p>
+              <p> <i class="material-icons" style ="color:#6A5ACD;">&#xe876;</i> Approve other developers and grow your team</p>
+              <p> <i class="material-icons" style ="color:#6A5ACD;">&#xe876;</i> Work with nonprofits to make a difference </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-<!-- Adding a different section -->
+
+
+
+
+<!-- Adding a testimonials section -->
 <hr />
 
 <!--Section: Testimonials v.3-->
@@ -218,7 +244,7 @@
             <div class="testimonial">
                 <!--Avatar-->
                 <div class="testimonial-pictures avatar mx-auto my-3">
-                    <img src="img/smiling-indian-woman.jpg" " class="rounded-circle z-depth-1 img-fluid">
+                    <img src="img/smiling-indian-woman.jpg" class="rounded-circle z-depth-1 img-fluid">
                 </div>
 
                 <!--Content-->
@@ -227,7 +253,7 @@
                 </h4>
                 <h6 class="mb-3 font-weight-bold blue-text">Software Developer</h6>
                 <p>
-                    <i class="fa fa-quote-left grey-text"></i> I love looking through the PubDev directory to find causes I care about. Contributing to them is so satisfying!</p>
+                    <i class="fa fa-quote-left grey-text"></i> "I love looking through the PubDev directory to find causes I care about. Contributing to them is so satisfying!"</p>
 
                 <!--Review-->
                 <div class="orange-text">
@@ -253,9 +279,9 @@
                 <h4 class="mb-3 dark-grey-text">
                     <strong>Harry Thomas</strong>
                 </h4>
-                <h6 class="mb-3 font-weight-bold blue-text">NonProfit Manager</h6>
+                <h6 class="mb-3 font-weight-bold blue-text">Nonprofit Manager</h6>
                 <p>
-                    <i class="fa fa-quote-left grey-text"></i> Working with developers to find tangible solutions to our problems has been simply life-changing. I'm so happy to be using PubDev!</p>
+                    <i class="fa fa-quote-left grey-text"></i> "Working with developers to find tangible solutions to our problems has been simply life-changing. I'm so happy to be using PubDev!"</p>
 
                 <!--Review-->
                 <div class="orange-text">
@@ -282,7 +308,7 @@
                 </h4>
                 <h6 class="mb-3 font-weight-bold blue-text">Web Developer</h6>
                 <p>
-                    <i class="fa fa-quote-left grey-text"></i> My experience using PubDev has only been positive! I love the fact that I'm using my development skills to help organizations in my area.</p>
+                    <i class="fa fa-quote-left grey-text"></i> "My experience using PubDev has only been positive! I love the fact that I'm using my development skills to help organizations in my area."</p>
 
                 <!--Review-->
                 <div class="orange-text">
@@ -302,8 +328,6 @@
 
 </section>
 <!--Section: Testimonials v.3-->
-
-
 
 
 

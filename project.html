@@ -33,7 +33,7 @@
               </a>
               <ul class="dropdown-menu">
                   <li><a href="#" class="dropdown-item">Inbox</a></li>
-                  <li><a href="#" class="dropdown-item">Edit Profile</a></li>
+                  <li><a href="editdevprof.html" class="dropdown-item">Edit Profile</a></li>
                   <li><a href="index.html"class="dropdown-item">Logout</a></li>
               </ul>
           </li>
@@ -45,16 +45,14 @@
 
 <div class="container">
         <h1 style="margin-top:20px;font-weight:450;">Website Development</h1>
-        <button href="#signup" class="nav-link btn btn-primary" data-toggle="modal" style="float:right;color: white; border-radius:5px; margin-right:100px;">
-          Join Project
-      </button>
+
         <!-- Modal HTML -->
         <!-- from https://www.w3schools.com/howto/howto_css_modals.asp-->
         <div id="signup" class="modal fade" data-backdrop="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title">Join Project</h4>
+                <h4 class="modal-title">Apply for Project</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
               </div>
 
@@ -72,25 +70,38 @@
                       <input type="text" id="signup-email" class="form-control">
                   </div>
                   <div class="form-group">
-                      <label for="form_message" style="margin-top:10px;">Message *</label>
+                      <label for="form_message" style="margin-top:10px;">What are your best programming languages? *</label>
                       <textarea id="form_message" name="message" class="form-control" placeholder="Message for Project Manager" rows="4" required="required" data-error="Please,leave us a message."></textarea>
                       <div class="help-block with-errors"></div>
                   </div>
+
+
+                  <div class="form-group">
+                      <label for="form_message" style="margin-top:10px;">Why do you want to work on this project? *</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for Project Manager" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                      <div class="help-block with-errors"></div>
+                  </div>
+
+
                   <div class="text-center">
-                      <button type="submit" class="btn btn-default">Sign Up</button>
+                      <button type="submit" class="btn btn-default">Apply</button>
                   </div>
                 </form>
               </div>
             </div>
           </div>
         </div>
-        <h5>For: <a href="nonprofit.html" style="color:black;font-weight:400;">Chicago Cares</a></h5>
+        <h5> <a href="nonprofit.html" style="color:black;font-weight:400;">Chicago Cares</a></h5>
+        <a href="https://join.slack.com/t/chicagocares/shared_invite/enQtMzI5ODc1NDU3NzY3LWQwMmJmYjYyNTc3NTY2Mzg3ZWJlNTZiZWRkYjMzZjU2NmU5MTc2NWZkMTMyMGVjNzZlYWU2NmUwMDhhMDIwMzM">
+        <img class = "project-icons" src = "img/slack-icon.png" alt = "">
+      </a>
+      <a href = "https://github.com/chicagocares">
+         <img class = "project-icons" src = "img/github-icon.svg" alt = "">
+       </a>
         <div>
+
             <h3 style="font-weight:400;margin-top:50px;">Project Description</h3>
-            <p style="font-weight:400;"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                 normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
-                 their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                 ected humour and the like). </p>
+            <p style="font-weight:400;"> For this project, we're recruiting developers to help us create a web page for our organization, Chicago Cares. Chicago Cares aims to help the community of Chicago through the recruitment of volunteers for community service projects. The estimated time committment for this task would be approximately 4-5 hours a week, but can be adjusted based on individual needs. We are looking for developers proficient in HTML, CSS, and JavaScript.  </p>
         </div>
         <div>
             <h3 style="font-weight:400;margin-top:50px;">How would this project impact your organization?</h3>
@@ -99,22 +110,11 @@
                     their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
                     ected humour and the like). </p>
         </div>
-        <div>
-            <h3 style="font-weight:400;margin-top:50px;">Current Tasks</h3>
-            <div>
-              <input type="checkbox" class="causecheck" value=""><label style="margin-left:10px;" class="causename">Do this thing.</label>
-            </div>
-            <div>
-              <input type="checkbox" class="causecheck" value=""><label style="margin-left:10px;" class="causename">And another one</label>
-            </div>
-            <div>
-              <input type="checkbox" class="causecheck" value=""><label style="margin-left:10px;" class="causename">This is a task</label>
-            </div>
-            <div>
-              <input type="checkbox" class="causecheck" style="margin-bottom:35px;" value=""><label style="margin-left:10px;" class="causename">Tasktastktaskttksatkaks</label>
-            </div>
-        </div>
+
+         <button type = "button" class="btn btn-primary project-button" class="nav-link" data-toggle="modal" href = "#signup" >Apply for Project</button>
     </div>
+
+
 <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
@@ -125,3 +125,5 @@
 
 </body>
 </html>
+
+
