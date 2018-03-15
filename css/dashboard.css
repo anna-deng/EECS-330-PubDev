@@ -1,11 +1,20 @@
+#pm-container {
+	width: 100%;
+}
+
+
 .padding {
 	padding-top: 30px;
 }
 
 .welcome {
 	display: inline;
-  font-weight: 300;
-  font-size: 60px;
+  	font-weight: 300;
+  	font-size: 4vw;
+}
+
+#myprojects {
+	font-size: 2vw;
 }
 
 .search {
@@ -14,11 +23,24 @@
 	margin: 0 auto;
 }
 
+#bigbox {
+	margin: auto;
+	width: 80%;
+}
+
+.page-title {
+	display: inline;
+}
+
 #projectbox {
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgb(220, 220, 220);
-  border-radius: 15px;
+  	border-radius: 15px;
+}
+
+#pm-btn {
+	display: block;
 }
 
 .proj-heading {
@@ -30,7 +52,7 @@
 .proj-img {
 	width: 100%;
 	height: 100%;
-  border-radius: 15px;
+  	border-radius: 15px;
 }
 
 .proj-title {
@@ -38,7 +60,7 @@
 	position: absolute;
 	top: 2%;
 	left: 2%;
-  font-weight: 100;
+  	font-weight: 100;
 }
 
 .btn-container {
@@ -116,9 +138,8 @@
 	text-align: center;
 }
 
-.contact-field {
-	margin: auto;
-	width: 83%;
+.contact-text {
+	width: 100%;
 }
 
 #submit {
@@ -130,4 +151,30 @@
 .tags {
 	margin: auto;
 	width: 50%;
+}
+
+.btn {
+	background-color: rgb(238, 9, 121);
+	outline-color: rgb(255, 40, 190);
+}
+
+.icon-col-left {
+	margin-top: 500px;
+}
+
+.material-icons {
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.icon-col-right {
+	margin-top: 500px;
+}
+
+#troop75 {
+	display: block;
+}
+
+#chicagocares {
+	display: none;
 }

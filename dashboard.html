@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Dashboard</title>
+  <title>Developer Dashboard</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -59,6 +59,7 @@
         <h2>Build Kettlecorn Purchase Form</h2>
         <h4>Deadline: 4/4/18</h4>
         <p>Every year the Boy Scouts sell Kettlecorn as a fundraiser.  We need to implement a purchase form for customers looking to buy kettlecorn from Troop 75.  The specifics on cost and types of kettlecorn can be found with Ben.  If you have any questions, contact Ben.  Let's sell some corn!</p>
+        <button id="finishbtn1" class="btn btn-default btn-primary" onclick="finishTask('kettlecorn', 'finishbtn1')">Task Finished</button>
       </div>
     </div>
   </div>
@@ -69,6 +70,7 @@
         <h2>Fill in Scoutmaster Bios</h2>
         <h4>Deadline: 4/8/18</h4>
         <p>In the GitHub, there is a document with a short bio for each of the scoutmasters.  Please adjust the "About Us" page to accomodate these new bios.</p>
+        <button id="finishbtn2" class="btn btn-default btn-primary" onclick="finishTask('bios', 'finishbtn2')">Task Finished</button>
       </div>
     </div>
   </div>
@@ -79,6 +81,7 @@
         <h2>Embed Troop Video to Homepage</h2>
         <h4>Deadline: 4/9/18</h4>
         <p>Troop 75 filmed a short video from our hike up Mt. Washington last Thursday.  Please embed this video on the "Troop Trips" page with a short description of the activity.</p>
+        <button id="finishbtn3" class="btn btn-default btn-primary" onclick="finishTask('video', 'finishbtn3')">Task Finished</button>
       </div>
     </div>
   </div>
@@ -89,7 +92,7 @@
         <h2>Update Contact Information</h2>
         <h4>Deadline: 4/15/18</h4>
         <p>Since they're taking down the old community building, Troop 75 will be meeting at the elementary school on Bow Center Road.  Please adjust the contact information accordingly.</p>
-        <button onclick="claimTask('contact', this.id)">Claim Task</button>
+        <button id="claimbtn" class="btn btn-default btn-primary" onclick="claimTask('contact', 'claimbtn')">Claim Task</button>
       </div>
     </div>
   </div>
@@ -100,7 +103,7 @@
         <h2>Create Community Calendar</h2>
         <h4>Deadline: 4/20/18</h4>
         <p>We have a lot of events in our troop and are hoping to make it easier for parents and scouts to get on board with upcoming events.  Please develop a calendar that can display troop events on our website.</p>
-        <button onclick="claimTask('calendar')">Claim Task</button>
+        <button id="claimbtn2" class="btn btn-default btn-primary" onclick="claimTask('calendar', 'claimbtn2')">Claim Task</button>
       </div>
     </div>
   </div>
@@ -113,28 +116,61 @@
           <div class="contact-field">
             <textarea class="contact-text" placeholder="Message here..." rows="4" cols="50"></textarea>
           </div>
-          <button id="submit" class="btn btn-default btn-primary" onclick="sendMessage()">Submit</button>
+          <button id="submit" class="btn btn-default btn-primary" onclick="sendMessage('modal6', 'submit')">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="modal7" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <form>
+          <h4 class="contact-head">Apply to be a Project Manager</h4>
+          <p>Why do you want to be a project manager?</p>
+          <div class="contact-field">
+            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+          </div>
+          <p>How much time can you commit to serving as a project manager?</p>
+          <div class="contact-field">
+            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+          </div>
+          <p>Describe any previous experience you have in project management.</p>
+          <div class="contact-field">
+            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+          </div>
+          <p>What areas of software development are you most proficient at?</p>
+          <div class="contact-field">
+            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+          </div>
+          <p>Are there any causes you are passionate about working for?</p>
+          <div class="contact-field">
+            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+          </div>
+          <button id="submit1" class="btn btn-default btn-primary" onclick="sendMessage('modal7', 'submit1')">Submit</button>
         </form>
       </div>
     </div>
   </div>
 
-  <div class="container">
+
+<!-- Content -->
+<div id="bigbox" class="row">
+  <div onclick="scrollCard()" class="col-sm-1 icon-col-left" align="right"><i class="material-icons">keyboard_arrow_left</i></div>
+  <div class="col-sm-10">
+  <div id="troop75" class="container">
     <div class="padding"></div>
     <h1 class="welcome">Welcome, Developer</h1>
-    <div class="padding"></div>
-
-    <div>
-      <h4 style="font-weight:400; font-size:30px;">My Projects</h4>
+    <div id="pm-btn">
+      <button class="btn btn-default btn-primary" data-toggle="modal" data-target="#modal7">Become a Project Manager</button>
     </div>
-
+    <div class="padding"></div>
+    <h4 id="myprojects">Project 1/2</h4>
     <div id="projectbox">
       <div class="proj-heading">
         <img class="proj-img" src="img/boyscouts.jpg">
-        <h3 class="proj-title">Troop 75 Website</h3>
+        <h3 class="proj-title" id="title">Troop 75 Website</h3>
       </div>
-
-
       <div class="container">
         <div class="btn-container">
           <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
@@ -148,26 +184,28 @@
             <h4>MY TASKS</h4>
             <ul id="taskList" class="proj-list">
               <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal1">Build Kettlecorn Purchase Form</li>
-              <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal2">Fill in Scoutmaster Bios</li>
-              <li class="proj-list-itm" data-toggle="modal" data-target="#modal3">Embed Troop Video to Homepage</li>
+              <li id="bios" class="proj-list-itm" data-toggle="modal" data-target="#modal2">Fill in Scoutmaster Bios</li>
+              <li id="video" class="proj-list-itm" data-toggle="modal" data-target="#modal3">Embed Troop Video to Homepage</li>
             </ul>
 
 
             <h4>OPEN TASKS</h4>
             <ul id="openList" class="proj-list">
-              <li id="contact" class="proj-list-itm" data-toggle="modal" data-target="#modal4">Update Contact Information</li>
-              <li id="calendar" class="proj-list-itm" data-toggle="modal" data-target="#modal5">Create Community Calendar</li>
+              <li id="contact" class="proj-list-itm" data-toggle="modal" data-target="#modal4" onclick="changeButton('claimbtn')">Update Contact Information</li>
+              <li id="calendar" class="proj-list-itm" data-toggle="modal" data-target="#modal5" onclick="changeButton('claimbtn2')">Create Community Calendar</li>
             </ul>
           </div>
+
+
           <div class="col-md-6">
             <div>
               <h4>MEMBERS</h4>
               <ul class="proj-list">
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Pinski [Project Manager]</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Segal</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Smith</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Hendrix</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6">Ben Podis</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Pinski [Project Manager]</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Segal</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Smith</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Hendrix</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Podis</li>
               </ul>
             </div>
           </div>
@@ -175,6 +213,62 @@
       </div>
     </div>
   </div>
+  <div id="chicagocares" class="container">
+    <div class="padding"></div>
+    <h1 class="welcome">Welcome, Developer</h1>
+    <button id="pm-btn" class="btn btn-default btn-primary" data-toggle="modal" data-target="#modal7">Become a Project Manager</button>
+    <div class="padding"></div>
+    <h4 id="myprojects">Project 2/2</h4>
+    <div id="projectbox">
+      <div class="proj-heading">
+        <img class="proj-img" src="img/nonprofit1dash.jpeg">
+        <h3 class="proj-title" id="title">Chicago Cares App</h3>
+      </div>
+      <div class="container">
+        <div class="btn-container">
+          <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
+          <a class="btn btn-default btn-primary" href="https://github.com/">GitHub</a>
+          <a class="btn btn-default btn-primary" href="profile.html">NonProfit Page</a>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>MY TASKS</h4>
+            <ul id="taskList" class="proj-list">
+              <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal1">Build Kettlecorn Purchase Form</li>
+              <li id="bios" class="proj-list-itm" data-toggle="modal" data-target="#modal2">Fill in Scoutmaster Bios</li>
+              <li id="video" class="proj-list-itm" data-toggle="modal" data-target="#modal3">Embed Troop Video to Homepage</li>
+            </ul>
+
+
+            <h4>OPEN TASKS</h4>
+            <ul id="openList" class="proj-list">
+              <li id="contact" class="proj-list-itm" data-toggle="modal" data-target="#modal4" onclick="changeButton('claimbtn')">Update Contact Information</li>
+              <li id="calendar" class="proj-list-itm" data-toggle="modal" data-target="#modal5" onclick="changeButton('claimbtn2')">Create Community Calendar</li>
+            </ul>
+          </div>
+
+
+          <div class="col-md-6">
+            <div>
+              <h4>MEMBERS</h4>
+              <ul class="proj-list">
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Zecha [Project Manager]</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Gunn</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Cantor</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Nadeau</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div onclick="scrollCard()" class="col-sm-1 icon-col-right"><i class="material-icons">keyboard_arrow_right</i></div>
+</div>
   <div class="padding"></div>
 
 
