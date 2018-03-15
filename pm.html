@@ -125,33 +125,15 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <form>
-          <h4 class="contact-head">Apply to be a Project Manager</h4>
-          <p>Why do you want to be a project manager?</p>
-          <div class="contact-field">
-            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
-          </div>
-          <p>How much time can you commit to serving as a project manager?</p>
-          <div class="contact-field">
-            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
-          </div>
-          <p>Describe any previous experience you have in project management.</p>
-          <div class="contact-field">
-            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
-          </div>
-          <p>What areas of software development are you most proficient at?</p>
-          <div class="contact-field">
-            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
-          </div>
-          <p>Are there any causes you are passionate about working for?</p>
-          <div class="contact-field">
-            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
-          </div>
-          <button id="submit1" class="btn btn-default btn-primary" onclick="sendMessage('modal7', 'submit1')">Submit</button>
-        </form>
-      </div>
-    </div>
+        <p>Nonprofit Name</p>
+        <p>Project</p>
+        <p>Description</p>
+        <p>Tags</p>
+        <p>Contact Button</p>
+        <p>Approve/Deny</p>
   </div>
+</div>
+</div>
 
 
 
@@ -165,13 +147,8 @@
   <div onclick="scrollCard()" class="col-sm-1 icon-col-left" align="right"><i class="material-icons">keyboard_arrow_left</i></div>
   <div class="col-sm-10">
   <div id="troop75" class="container">
-    <div class="padding"></div>
     <h1 class="welcome">Welcome, Project Manager</h1>
-    <div id="pm-btn">
-      <button class="btn btn-default btn-primary" data-toggle="modal" data-target="#modal7">Become a Project Manager</button>
-    </div>
-    <div class="padding"></div>
-    <h4 id="myprojects">Project 1/2</h4>
+    <h4 class="proj-count">Project 1/2</h4>
     <div id="projectbox">
       <div class="proj-heading">
         <img class="proj-img" src="img/boyscouts.jpg">
@@ -220,11 +197,8 @@
     </div>
   </div>
   <div id="chicagocares" class="container">
-    <div class="padding"></div>
-    <h1 class="welcome">Welcome, Developer</h1>
-    <button id="pm-btn" class="btn btn-default btn-primary" data-toggle="modal" data-target="#modal7">Become a Project Manager</button>
-    <div class="padding"></div>
-    <h4 id="myprojects">Project 2/2</h4>
+    <h1 class="welcome">Welcome, Project Manager</h1>
+    <h4 class="proj-count">Project 2/2</h4>
     <div id="projectbox">
       <div class="proj-heading">
         <img class="proj-img" src="img/nonprofit1dash.jpeg">
@@ -277,18 +251,32 @@
 </div>
 
 </div>
-<div class="col-sm-3">
+<div class="col-sm-3 project-queue">
   <div class="padding"></div>
   <h1>Project Approval Queue</h1>
   <ul id="taskList" class="proj-list">
-    <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal1">
-      <h4>Link Unlimited Website</h4>
+    <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal7">
+      <p>Link Unlimited Website</p>
       <ul>
         <li>April - May 2018</li>
+        <li>Website with mission statement, bios, and contact page</li>
       </ul>
     </li>
-    <li id="bios" class="proj-list-itm" data-toggle="modal" data-target="#modal2">The Night Ministry Health Care Database</li>
-    <li id="video" class="proj-list-itm" data-toggle="modal" data-target="#modal3">Latinos Progresando Messaging Platform</li>
+    <li id="bios" class="proj-list-itm" data-toggle="modal" data-target="#modal7">
+      <p>The Night Ministry Health Care Database</p>
+      <ul>
+        <li>May - September 2018</li>
+        <li>Database to track members' health care information</li>
+      </ul>
+    </li>
+    <li id="video" class="proj-list-itm" data-toggle="modal" data-target="#modal7">
+      <p>Latinos Progresando Messaging Platform</p>
+      <ul>
+        <li>April 2018</li>
+        <li>Platform for Lations Progresando to communicate</li>
+      </ul>
+    </li>
+
   </ul>
 </div>
 </div>

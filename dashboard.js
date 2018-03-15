@@ -54,12 +54,12 @@ function scrollCard() {
 	var card1 = document.getElementById("troop75");
 	var card2 = document.getElementById("chicagocares");
 
-	if (card1.style.display === "block") {
-		card1.setAttribute("style", "display: none");
-		card2.setAttribute("style", "display: block");
-	} else {
+	if (card1.style.display === "none") {
 		card1.setAttribute("style", "display: block");
 		card2.setAttribute("style", "display: none");
+	} else {
+		card1.setAttribute("style", "display: none");
+		card2.setAttribute("style", "display: block");
 	}
 
 	
