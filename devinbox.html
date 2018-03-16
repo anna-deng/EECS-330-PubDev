@@ -25,16 +25,93 @@
 <body>
 
 <!-- MODALS -->
-<div id="modal1" class="modal fade" data-backdrop="false">
+<div class="modal fade" data-backdrop="false" id="modal1">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content" id="conv1">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h2>Build Kettlecorn Purchase Form</h2>
-        <h4>Deadline: 4/4/18</h4>
-        <p>Every year the Boy Scouts sell Kettlecorn as a fundraiser.  We need to implement a purchase form for customers looking to buy kettlecorn from Troop 75.  The specifics on cost and types of kettlecorn can be found with Ben.  If you have any questions, contact Ben.  Let's sell some corn!</p>
+        <div class="conversation-header">
+          <div style="text-align: center; font-weight: bold">
+            Jennifer Smith
+          </div>
+        </div>
+        <div class="message-wrapper">
+          <div class="sent">
+            Hello, my name is John Doe. I am very interested in joining your project. I have tons of experience with HTML/CSS and jQuery.
+          </div>
+        </div>
+        <div class="date-wrapper">
+          <div class="sent-date">
+            Mar 14
+          </div>
+        </div>
+      <div class="message-wrapper">
+          <div class="received">
+            Hi John, I'm glad you are interested in this project. Here are the next steps.
+          </div>
+      </div>
+      <div class="date-wrapper">
+          <div class="received-date">
+            Mar 14
+          </div>
+      </div>
+      <div class = "input-group" id="input1">
+        <input type="text" id="mes1" class="form-control" aria-label="Message" aria-describedby = "basic-addon2">
+        <div class="input-group-append">
+          <button class="bn" type="button" style="background-color: #EE0979; color: white;" onclick="sendMessage('conv1','mes1', 'input1')">Send</button>
+        </div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="modal fade" data-backdrop="false" id="modal2">
+    <div class="modal-dialog">
+      <div class="modal-content" id="conv1">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div class="conversation-header">
+          <div style="text-align: center; font-weight: bold">
+            James Ross
+          </div>
+        </div>
+        <div class="message-wrapper">
+          <div class="sent">
+            Hello, my name is John Doe. I used to be a Boy Scout in troop 212, and I'd love to give back and use my technology skills for good. I have 4 yrs of experience with React.js and HTML/CSS. Check out my GitHub profile for details.
+          </div>
+        </div>
+        <div class="date-wrapper">
+          <div class="sent-date">
+            Mar 4
+          </div>
+        </div>
+      <div class="message-wrapper">
+          <div class="received">
+            Hi John! Thanks for applying - it looks like we'll be able to take you on. What features are you interested in working on?
+          </div>
+      </div>
+      <div class="date-wrapper">
+          <div class="received-date">
+            Mar 5
+          </div>
+      </div>
+      <div class="message-wrapper">
+          <div class="sent">
+              Hi James. I've just realized I don't have the time to take this project. Will reach out when free!
+          </div>
+      </div>
+      <div class="date-wrapper">
+          <div class="sent-date">
+            Mar 5
+          </div>
+      </div>
+      <div class = "input-group" id="input1">
+        <input type="text" id="mes1" class="form-control" aria-label="Message" aria-describedby = "basic-addon2">
+        <div class="input-group-append">
+          <button class="bn" type="button" style="background-color: #EE0979; color: white;" onclick="sendMessage('conv1','mes1', 'input1')">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
@@ -67,21 +144,6 @@
       <div class="padding"></div>
       <h1 class="welcome">Messages</h1>
       <div class="padding"></div>
-      <div class="message-container">
-        <div class="message-preview">
-          <div class="row">
-            <div class="col-2" id="image">
-              image goes here
-            </div>
-            <div class="col-8" id="body-container">
-              message body
-            </div>
-            <div class="col-2" id="date">
-              date
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="message-container" data-toggle = "modal" data-target = "#modal1">
           <div class="message-preview">
             <div class="row">
@@ -94,62 +156,73 @@
                 </div>
                 <span class="badge badge-primary skilltag">Chicago Cares - Web Application Project</span>
                 <div class="message-text">
-                  Glad, that you are interested in this project. Here are the next steps.
+                    Hi John, I'm glad you are interested in this project. Here are the next steps.
+                </div>
+              </div>
+              <div class="col-2">
+                  <div class = "date">
+                      Mar 14
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="message-container" data-toggle = "modal" data-target = "#modal2">
+          <div class="message-preview">
+            <div class="row">
+              <div class="col-2">
+                <div id="img2"></div>
+              </div>
+              <div class="col-8" id="body-container">
+                <div class="name">
+                  James Ross
+                </div>
+                <span class="badge badge-primary skilltag">Boy Scout Troop 75 - Website</span>
+                <div class="message-text">
+                    Hi James. I've just realized I don't have the time to take this project. Will reach out when free!
+                </div>
+              </div>
+              <div class="col-2">
+                  <div class = "date">
+                      Mar 5
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="message-container">
+          <div class="message-preview">
+            <div class="row">
+              <div class="col-2">
+                <div id="img3"></div>
+              </div>
+              <div class="col-8" id="body-container">
+                <div class="name">
+                  PubDev
+                </div>
+                <div class="message-text">
+                    Welcome to PubDev! Get started by searching for browsing our non-profit's projects.
                 </div>
               </div>
               <div class="col-2">
                   <div class = "date">
                       Feb 25
                   </div>
-                </div>
-            </div>
+              </div>
           </div>
         </div>
-        <div class="message-container">
-            <div class="message-preview">
-              <div class="row">
-                <div class="col-2" id="image">
-                  image goes here
-                </div>
-                <div class="col-8" id="body-container">
-                  message body
-                </div>
-                <div class="col-2">
-                  <div class = "date">
-                      Feb 25
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="message-container">
-              <div class="message-preview">
-                <div class="row">
-                  <div class="col-2" id="image">
-                    image goes here
-                  </div>
-                  <div class="col-8" id="body-container">
-                    message body
-                  </div>
-                  <div class="col-2" class="date">
-                    date
-                  </div>
-                </div>
-              </div>
-            </div>
+      </div>
+      <div class="padding"></div>
   </div>
 
 
-
-
-
-    <footer class="py-5 bg-dark">
+    <footer class="fixed-bottom py-3 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
         </div>
     </footer>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="inbox.js"></script>
+    <script src="scripts/inbox.js"></script>
     </body>
 </html>
