@@ -23,7 +23,7 @@ function claimTask(task, button) {
 		btn.innerHTML = "Thanks!";
 		btn.setAttribute("class", "btn btn-primary disabled");
 		btn.setAttribute("style", "background-color: #ee0979; border-color: #ee0979;")
-	}	
+	}
 }
 
 function changeButton(button) {
@@ -62,5 +62,5 @@ function scrollCard() {
 		card2.setAttribute("style", "display: block");
 	}
 
-	
+
 }

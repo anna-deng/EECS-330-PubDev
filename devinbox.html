@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Inbox</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/inbox.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- MODALS -->
+<div id="modal1" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2>Build Kettlecorn Purchase Form</h2>
+        <h4>Deadline: 4/4/18</h4>
+        <p>Every year the Boy Scouts sell Kettlecorn as a fundraiser.  We need to implement a purchase form for customers looking to buy kettlecorn from Troop 75.  The specifics on cost and types of kettlecorn can be found with Ben.  If you have any questions, contact Ben.  Let's sell some corn!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">PubDev</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link"href="nonprofdirectory.html">Search Nonprofits</a>
+          </li>
+          <li class="dropdown nav-item">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Profile
+                  <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="devinbox.html" class="dropdown-item">Inbox</a></li>
+                  <li><a href="editdevprof.html" class="dropdown-item">Edit Profile</a></li>
+                  <li><a href="index.html"class="dropdown-item">Logout</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-top:-25px;">
+      <div class="padding"></div>
+      <h1 class="welcome">Messages</h1>
+      <div class="padding"></div>
+      <div class="message-container">
+        <div class="message-preview">
+          <div class="row">
+            <div class="col-2" id="image">
+              image goes here
+            </div>
+            <div class="col-8" id="body-container">
+              message body
+            </div>
+            <div class="col-2" id="date">
+              date
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="message-container" data-toggle = "modal" data-target = "#modal1">
+          <div class="message-preview">
+            <div class="row">
+              <div class="col-2">
+                <div id="img1"></div>
+              </div>
+              <div class="col-8" id="body-container">
+                <div class="name">
+                  Jennifer Smith
+                </div>
+                <span class="badge badge-primary skilltag">Chicago Cares - Web Application Project</span>
+                <div class="message-text">
+                  Glad, that you are interested in this project. Here are the next steps.
+                </div>
+              </div>
+              <div class="col-2">
+                  <div class = "date">
+                      Feb 25
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="message-container">
+            <div class="message-preview">
+              <div class="row">
+                <div class="col-2" id="image">
+                  image goes here
+                </div>
+                <div class="col-8" id="body-container">
+                  message body
+                </div>
+                <div class="col-2">
+                  <div class = "date">
+                      Feb 25
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message-container">
+              <div class="message-preview">
+                <div class="row">
+                  <div class="col-2" id="image">
+                    image goes here
+                  </div>
+                  <div class="col-8" id="body-container">
+                    message body
+                  </div>
+                  <div class="col-2" class="date">
+                    date
+                  </div>
+                </div>
+              </div>
+            </div>
+  </div>
+
+
+
+
+
+  <footer class="py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
+      </div>
+  </footer>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="inbox.js"></script>
+    </body>
+</html>

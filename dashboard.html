@@ -34,14 +34,17 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link"href="nonprofdirectory.html">Search Nonprofits</a>
+            <a class="nav-link" data-toggle="modal" href="#modal7">Become a Project Manager</a>
+         </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nonprofdirectory.html">Search Nonprofits</a>
           </li>
           <li class="dropdown nav-item">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Profile
                   <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                  <li><a href="#" class="dropdown-item">Inbox</a></li>
+                  <li><a href="devinbox.html" class="dropdown-item">Inbox</a></li>
                   <li><a href="editdevprof.html" class="dropdown-item">Edit Profile</a></li>
                   <li><a href="index.html"class="dropdown-item">Logout</a></li>
               </ul>
@@ -160,9 +163,6 @@
   <div class="col-sm-10">
   <div id="troop75" class="container">
     <h1 class="welcome">Welcome, Developer</h1>
-    <div id="pm-btn">
-      <button class="btn btn-default btn-primary" data-toggle="modal" data-target="#modal7">Become a Project Manager</button>
-    </div>
     <h4 class="proj-count">Project 1/2</h4>
     <div id="projectbox">
       <div class="proj-heading">
@@ -211,11 +211,9 @@
       </div>
     </div>
   </div>
+
   <div id="chicagocares" class="container">
     <h1 class="welcome">Welcome, Developer</h1>
-    <div id="pm-btn">
-      <button class="btn btn-default btn-primary" data-toggle="modal" data-target="#modal7">Become a Project Manager</button>
-    </div>
     <h4 class="proj-count">Project 2/2</h4>
     <div id="projectbox">
       <div class="proj-heading">
@@ -270,13 +268,13 @@
   <div class="padding"></div>
 
 
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
-    </div>
+  <footer class="py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
+      </div>
   </footer>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="dashboard.js"></script>
+  <script src="scripts\dashboard.js"></script>
 </body>
 </html>
