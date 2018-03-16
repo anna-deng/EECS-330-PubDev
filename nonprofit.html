@@ -33,7 +33,7 @@
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-item">Inbox</a></li>
+                    <li><a href="devinbox.html" class="dropdown-item">Profile</a></li>
                     <li><a href="editdevprof.html" class="dropdown-item">Edit Profile</a></li>
                     <li><a href="index.html"class="dropdown-item">Logout</a></li>
                 </ul>
@@ -76,12 +76,11 @@
                 <li style="font-weight:400;">Chicago, IL</li>
                 <li>
                   <a href="https://www.chicagocares.org/">https://www.chicagocares.org/</a></li>
-
-                  <li style="margin-bottom: 5px;">
-                      <a href="#ourprojects" class="btn btn-primary">View Current Projects</a>
-                  </li>
-                  <li>Chicago Cares partners with community organizations, schools and parks, allowing them to better achieve their missions.></li>
-                <li style="font-weight:400;"><button href="#contactmodal" class="btn btn-primary nav-link" data-toggle="modal">Contact</button></li>
+                  <li>Chicago Cares partners with community organizations, schools and parks, allowing them to better achieve their missions.</li>
+                  <li style="margin-top:15px; list-style-type:none;">
+                      <a href="#ourprojects" style="height: 40px;" class="btn btn-primary">View Current Projects</a>
+                  <button href="#contactmodal" style="height: 40px; margin-left:5px;" class="btn btn-primary nav-link" data-toggle="modal">Contact</button>
+                </li>
                 <div id="contactmodal" class="modal fade" data-backdrop="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
@@ -137,7 +136,7 @@
                                           </div>
                                       </div>
                                       <div class="col-md-12">
-                                          <button class="btn btn-success btn-send" style="text-align:center;" id="submit" onclick="sendMessage()">Send message</button>
+                                          <button class="btn btn-success btn-send" id=contactbut style="text-align:center;" id="submit" onclick="sendMessage('contactmodal', 'contactbut')">Send message</button>
 
                                       </div>
                                   </div>
@@ -155,16 +154,16 @@
     </div>
     <div>
         <h2 style="font-weight:400;">Why We Matter?</h2>
-        <p> At Chicago Cares, we empower people to roll up their sleeves to solve the city’s most pressing challenges. 
+        <p> At Chicago Cares, we empower people to roll up their sleeves to solve the city’s most pressing challenges.
             Through the power of the volunteer experience, we bring people together from all Chicago neighborhoods. Chicagoans learn that they can and must be agents of change.
-            Volunteers meet immediate needs while simultaneously breaking down barriers and creating a movement  for long-term change, connecting with new people and building trust, empathy and understanding. 
+            Volunteers meet immediate needs while simultaneously breaking down barriers and creating a movement  for long-term change, connecting with new people and building trust, empathy and understanding.
             What’s the ultimate goal? Chicago Cares envisions a city where we’re all active participants, fully invested in the city we call home and the success of all of our neighbors.
         </p>
     </div>
     <div>
         <h2 style="font-weight:400;">Additional Info</h2>
-        <p> Chicago Cares partners with community organizations, schools and parks, allowing them to better achieve their missions. By providing high-quality programming and consistent volunteer support, 
-            we partner to help solve the challenges facing our city. Our staff works with each community partner to identify their most pressing needs and then creates and manages a project or series of projects 
+        <p> Chicago Cares partners with community organizations, schools and parks, allowing them to better achieve their missions. By providing high-quality programming and consistent volunteer support,
+            we partner to help solve the challenges facing our city. Our staff works with each community partner to identify their most pressing needs and then creates and manages a project or series of projects
             that puts volunteers to work meeting those needs in a meaningful way. There is no cost to become a Chicago Cares community partner. </p>
     </div>
 <div>
@@ -178,7 +177,7 @@
                  <a href="project.html" class="btn btn-primary">Visit Project</a>
                </div>
                <div class="tags" style="text-align:center;" >
-               <span class="badge badge-primary skilltag" id="npskill">HTML</span>
+                 <span class="badge badge-info skilltag" id="npskill">Node.js</span>
              </div>
            </div>
           </div>
@@ -191,20 +190,20 @@
                            <a href="project.html" class="btn btn-primary">Visit Project</a>
                          </div>
                          <div class="tags" style="text-align:center;" >
-                         <span class="badge badge-primary skilltag" id="npskill">Xcode</span>
+                         <span class="badge badge-info skilltag" id="npskill">Xcode</span>
                        </div>
                      </div>
                     </div>
 
 </div>
-<footer class="py-5 bg-dark">
+<footer class="py-3 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
     </div>
 </footer>
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="dashboard.js"></script>
+<script src="scripts/dashboard.js"></script>
 
 </body>
 </html>
