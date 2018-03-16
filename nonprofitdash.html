@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nonprofit Dashboard</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/dashboard.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">PubDev</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link"href="devdir.html">Search Developers</a>
+          </li>
+          <li class="dropdown nav-item">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Profile
+                  <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Inbox</a></li>
+                  <li><a href="#" class="dropdown-item">Edit Profile</a></li>
+                  <li><a href="index.html"class="dropdown-item">Logout</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MODALS -->
+  <div id="modal1" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2>Build Kettlecorn Purchase Form</h2>
+        <h4>Deadline: 4/4/18</h4>
+        <p>Every year the Boy Scouts sell Kettlecorn as a fundraiser.  We need to implement a purchase form for customers looking to buy kettlecorn from Troop 75.  The specifics on cost and types of kettlecorn can be found with Ben.  If you have any questions, contact Ben.  Let's sell some corn!</p>
+      </div>
+    </div>
+  </div>
+  <div id="modal2" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2>Fill in Scoutmaster Bios</h2>
+        <h4>Deadline: 4/8/18</h4>
+        <p>In the GitHub, there is a document with a short bio for each of the scoutmasters.  Please adjust the "About Us" page to accomodate these new bios.</p>
+      </div>
+    </div>
+  </div>
+  <div id="modal3" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2>Embed Troop Video to Homepage</h2>
+        <h4>Deadline: 4/9/18</h4>
+        <p>Troop 75 filmed a short video from our hike up Mt. Washington last Thursday.  Please embed this video on the "Troop Trips" page with a short description of the activity.</p>
+      </div>
+    </div>
+  </div>
+  <div id="modal6" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <form>
+          <h4 class="contact-head">Send Message</h4>
+          <div class="contact-field">
+            <textarea class="contact-text" placeholder="Message here..." rows="4" cols="50"></textarea>
+          </div>
+          <button id="submit" class="btn btn-default btn-primary" onclick="sendMessage('modal6', 'submit')">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="modal7" class="modal fade" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <form>
+          <h4 class="contact-head">Project Proposal</h4>
+          <p>Briefly describe what project you need done</p>
+          <div class="contact-field">
+            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+          </div>
+          <p>Is there a deadline for this project?</p>
+          <div class="contact-field">
+            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+          </div>
+          <p>What help or resources can you provide developers with?</p>
+          <div class="contact-field">
+            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+          </div>
+          <p>What is your availability to meet with a project manager?</p>
+          <div class="contact-field">
+            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+          </div>
+          <p>Please describe any constraints or specifications for your project.</p>
+          <div class="contact-field">
+            <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+          </div>
+          <button id="submit1" class="btn btn-default btn-primary" onclick="sendMessage('modal7', 'submit1')">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Content -->
+<div id="bigbox" class="row">
+  <div onclick="scrollCard()" class="col-sm-1 icon-col-left" align="right"><i class="material-icons">keyboard_arrow_left</i></div>
+
+<!-- CARD 1-->
+  <div class="col-sm-10">
+  <div id="troop75" class="container">
+    <div class="padding"></div>
+    <h1 class="welcome">Welcome, Nonprofit</h1>
+    <div id="pm-btn">
+      <button class="btn btn-default btn-primary" data-toggle="modal" data-target="#modal7">Propose A Project</button>
+    </div>
+    <div class="padding"></div>
+    <h4 id="myprojects">Project 1/2</h4>
+    <div id="projectbox">
+      <div class="proj-heading">
+        <img class="proj-img" src="img/nonprofit1dash.jpeg">
+        <h3 class="proj-title" id="title">Chicago Cares Website</h3>
+      </div>
+      <div class="container">
+        <div class="btn-container">
+          <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
+          <a class="btn btn-default btn-primary" href="https://github.com/">GitHub</a>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>FINISHED TASKS</h4>
+            <ul id="taskList" class="proj-list">
+              <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal1">Build Kettlecorn Purchase Form</li>
+              <li id="bios" class="proj-list-itm" data-toggle="modal" data-target="#modal2">Fill in Scoutmaster Bios</li>
+              <li id="video" class="proj-list-itm" data-toggle="modal" data-target="#modal3">Embed Troop Video to Homepage</li>
+            </ul>
+          </div>
+
+
+          <div class="col-md-6">
+            <div>
+              <h4>MEMBERS</h4>
+              <ul class="proj-list">
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Pinski [Project Manager]</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Segal</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Smith</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Hendrix</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Podis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- CARD 2 -->
+  <div id="chicagocares" class="container">
+    <div class="padding"></div>
+    <h1 class="welcome">Welcome, Nonprofit</h1>
+    <button id="pm-btn" class="btn btn-default btn-primary" data-toggle="modal" data-target="#modal7">Propose A Project</button>
+    <div class="padding"></div>
+    <h4 id="myprojects">Project 2/2</h4>
+    <div id="projectbox">
+      <div class="proj-heading">
+        <img class="proj-img" src="img/nonprofit1dash.jpeg">
+        <h3 class="proj-title" id="title">Chicago Cares App</h3>
+      </div>
+      <div class="container">
+        <div class="btn-container">
+          <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
+          <a class="btn btn-default btn-primary" href="https://github.com/">GitHub</a>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>FINISHED TASKS</h4>
+            <ul id="taskList" class="proj-list">
+              <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal1">Build Kettlecorn Purchase Form</li>
+              <li id="bios" class="proj-list-itm" data-toggle="modal" data-target="#modal2">Fill in Scoutmaster Bios</li>
+              <li id="video" class="proj-list-itm" data-toggle="modal" data-target="#modal3">Embed Troop Video to Homepage</li>
+            </ul>
+          </div>
+
+
+          <div class="col-md-6">
+            <div>
+              <h4>MEMBERS</h4>
+              <ul class="proj-list">
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Zecha [Project Manager]</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Gunn</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Cantor</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Nadeau</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div onclick="scrollCard()" class="col-sm-1 icon-col-right"><i class="material-icons">keyboard_arrow_right</i></div>
+</div>
+  <div class="padding"></div>
+
+  <footer class="py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
+      </div>
+  </footer>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts\dashboard.js"></script>
+</body>
+</html>
