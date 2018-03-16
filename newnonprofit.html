@@ -18,6 +18,38 @@
 </head>
 <body>
 
+<div id="modal7" class="modal fade" data-backdrop="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close ml-auto" style="margin-top:10px; margin-right:10px;"data-dismiss="modal" aria-hidden="true">&times;</button>
+      <form style="margin-left:40px;">
+        <h4 class="contact-head">Project Proposal</h4>
+        <p>Briefly describe what project you need done</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <p>Is there a deadline for this project?</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <p>What help or resources can you provide developers with?</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <p>What is your availability to meet with a project manager?</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <p>Please describe any constraints or specifications for your project.</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <button id="submit1" style="margin-bottom:10px;" class="btn btn-default btn-primary" onclick="sendMessage('modal7', 'submit1')">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
@@ -38,7 +70,7 @@
                   <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                  <li><a href="devinbox.html" class="dropdown-item">Inbox</a></li>
+                  <li><a href="npinbox.html" class="dropdown-item">Inbox</a></li>
                   <li><a href="editnpprof.html" class="dropdown-item">Edit Profile</a></li>
                   <li><a href="index.html"class="dropdown-item">Logout</a></li>
               </ul>
