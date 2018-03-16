@@ -25,6 +25,9 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" href="#modal7">Become a Project Manager</a>
+         </li>
+          <li class="nav-item">
             <a class="nav-link"href="nonprofdirectory.html">Search Nonprofits</a>
           </li>
           <li class="dropdown nav-item">
@@ -48,13 +51,47 @@
 <p class = "subtext"> It looks like you haven't joined any projects yet. Search for nonprofits or apply to be a project manager now! </p>
 </div>
 
+<div id="modal7" class="modal fade"data-backdrop="false">
+  <div class="modal-dialog">
+    <div class="modal-content"  style="margin-top:25px;">
+      <button type="button" class="close ml-auto" style="margin-top:10px; margin-right:10px;" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <form style="margin-left:40px;">
+        <h4 class="contact-head">Apply to be a Project Manager</h4>
+        <p>Why do you want to be a project manager?</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <p>How much time can you commit to serving as a project manager?</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <p>Describe any previous experience you have in project management.</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <p>What areas of software development are you most proficient at?</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <p>Are there any causes you are passionate about working for?</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <button style="margin-bottom: 10px;" id="submit1" class="btn btn-default btn-primary" onclick="sendMessage('modal7', 'submit1')">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
 <footer class="py-3 bg-dark">
+
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
     </div>
 </footer>
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+<script src="scripts/dashboard.js"></script>
 </body>
 </html>

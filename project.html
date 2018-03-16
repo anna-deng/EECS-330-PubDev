@@ -59,17 +59,8 @@
               <div class="modal-body">
                 <form action="project.html" novalidate>
                   <!--from https://mdbootstrap.com/components/forms/-->
-                  <div class="md-form">
-                      <i class="fa fa-envelope prefix grey-text"></i>
-                      <label>Name *</label>
-                      <input type="text" id="signup-name" class="form-control">
-                  </div>
-                  <div class="md-form">
-                      <i class="fa fa-envelope prefix grey-text"></i>
-                      <label style="margin-top:10px;">Email *</label>
-                      <input type="text" id="signup-email" class="form-control">
-                  </div>
-                  <div class="form-group">
+
+                  <div class="form-group" style="margin-top:-10px;">
                       <label for="form_message" style="margin-top:10px;">What are your best programming languages? *</label>
                       <textarea id="form_message" name="message" class="form-control" placeholder="Message for Project Manager" rows="4" required="required" data-error="Please,leave us a message."></textarea>
                       <div class="help-block with-errors"></div>
@@ -84,7 +75,7 @@
 
 
                   <div class="text-center">
-                      <button type="submit" class="btn btn-default">Apply</button>
+                      <button type="submit" class="btn btn-primary" id="submit" onclick="sendMessage('contactmodal', 'submit')">Apply</button>
                   </div>
                 </form>
               </div>
@@ -98,17 +89,24 @@
       <a href = "https://github.com/chicagocares">
          <img class = "project-icons" src = "img/github-icon.svg" alt = "">
        </a>
+       <p>
+            <div class="tags project-tags">
+                <span class="badge badge-primary causetag" id="npcause">Women's Rights</span>
+                <span class="badge badge-primary skilltag" id="npskill">Node.js</span>
+                <span class="badge badge-primary timetag" id="nptime">&lt5 hours/week</span>
+              </div>
+</p>
+
         <div>
 
             <h3 style="font-weight:400;margin-top:50px;">Project Description</h3>
             <p style="font-weight:400;"> For this project, we're recruiting developers to help us create a web page for our organization, Chicago Cares. Chicago Cares aims to help the community of Chicago through the recruitment of volunteers for community service projects. The estimated time committment for this task would be approximately 4-5 hours a week, but can be adjusted based on individual needs. We are looking for developers proficient in HTML, CSS, and JavaScript.  </p>
         </div>
         <div>
-            <h3 style="font-weight:400;margin-top:50px;">How would this project impact your organization?</h3>
-            <p style="font-weight:400;"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                    normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
-                    their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    ected humour and the like). </p>
+            <h3 style="font-weight:400;margin-top:50px;">How would this project impact us?</h3>
+            <p style="font-weight:400;">
+            	This project would enable Chicago Cares to find dedicated volunteers for our cause. There are so many opportunities to volunteer and help others in Chicago, but many of these events are not highly publicized. Our website would enable us to advertise our events to a wider audience, and would even give users the option to sync their Google Calendars with ours. We're excited to see what developers will bring to the table. Apply today!
+            </p>
         </div>
 
          <button type = "button" class="btn btn-primary project-button" class="nav-link" data-toggle="modal" href = "#signup" >Apply for Project</button>
@@ -122,6 +120,6 @@
     </footer>
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+<script src="scripts/dashboard.js"></script>
 </body>
 </html>
