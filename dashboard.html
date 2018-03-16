@@ -27,7 +27,7 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">PubDev</a>
+      <a class="navbar-brand" href="dashboard.html">PubDev</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -155,11 +155,44 @@
       </div>
     </div>
   </div>
+  <div id="modal10" class="modal fade" data-backdrop="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h2>Enable Event Reminders</h2>
+      <h4>Deadline: 3/29/18</h4>
+      <p>If a user has signed up for an event, make sure they get a notification through the mobile application the day before the event and one hour before the event.  Opening the notification should bring them to the event page.</p>
+      <button id="finishbtn4" class="btn btn-default btn-primary" onclick="finishTask2('reminder', 'finishbtn4')">Finish Task</button>
+    </div>
+  </div>
+</div>
+<div id="modal11" class="modal fade" data-backdrop="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h2>Standardize Web and App Interfaces</h2>
+      <h4>Deadline: 4/2/18</h4>
+      <p>While both the web and mobile platforms are coming along nicely, we need someone to go through the mobile platform and fix inconsistencies with the web platform.  There are several major thematic/visual elements that are inconsistent across the platforms and make for a poorer UI experience.</p>
+      <button id="finishbtn5" class="btn btn-default btn-primary" onclick="finishTask2('webapp', 'finishbtn5')">Finish Task</button>
+    </div>
+  </div>
+</div>
+<div id="modal12" class="modal fade" data-backdrop="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h2>Create About Us Screen</h2>
+      <h4>Deadline: 3/21/18</h4>
+      <p>There is no screen for users new to our services/interested in finding out more about Chicago Cares.  We'd like to implement a screen that explains our mission and our core values.</p>
+      <button id="claimbtn3" class="btn btn-default btn-primary" onclick="claimTask2('aboutus', 'claimbtn3')">Claim Task</button>
+    </div>
+  </div>
+</div>
 
 
 <!-- Content -->
 <div id="bigbox" class="row">
-  <div onclick="scrollCard()" class="col-sm-1 icon-col-left" align="right"><i class="material-icons">keyboard_arrow_left</i></div>
+  <div onclick="scrollCard()" class="col-sm-1 scroll-icon-pm" align="right"><i class="material-icons">keyboard_arrow_left</i></div>
   <div class="col-sm-10">
   <div id="troop75" class="container">
     <h1 class="welcome">Welcome, Developer</h1>
@@ -203,10 +236,9 @@
               <h4>MEMBERS</h4>
               <ul class="proj-list">
                 <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Pinski [Project Manager]</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Segal</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Smith</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Hendrix</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Podis</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Jackson Bator</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Justin Huppe</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Dan Nelson</li>
               </ul>
             </div>
           </div>
@@ -237,17 +269,15 @@
         <div class="row">
           <div class="col-sm-6">
             <h4>MY TASKS</h4>
-            <ul id="taskList" class="proj-list">
-              <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal1">Build Kettlecorn Purchase Form</li>
-              <li id="bios" class="proj-list-itm" data-toggle="modal" data-target="#modal2">Fill in Scoutmaster Bios</li>
-              <li id="video" class="proj-list-itm" data-toggle="modal" data-target="#modal3">Embed Troop Video to Homepage</li>
+            <ul id="taskList2" class="proj-list">
+              <li id="reminder" class="proj-list-itm" data-toggle="modal" data-target="#modal10">Enable Event Reminders</li>
+              <li id="webapp" class="proj-list-itm" data-toggle="modal" data-target="#modal11">Standardize web and app interfaces</li>
             </ul>
 
 
             <h4>OPEN TASKS</h4>
             <ul id="openList" class="proj-list">
-              <li id="contact" class="proj-list-itm" data-toggle="modal" data-target="#modal4" onclick="changeButton('claimbtn')">Update Contact Information</li>
-              <li id="calendar" class="proj-list-itm" data-toggle="modal" data-target="#modal5" onclick="changeButton('claimbtn2')">Create Community Calendar</li>
+              <li id="aboutus" class="proj-list-itm" data-toggle="modal" data-target="#modal12" onclick="changeButton('claimbtn3')">Create About Us Screen</li>
             </ul>
           </div>
 
@@ -256,10 +286,11 @@
             <div>
               <h4>MEMBERS</h4>
               <ul class="proj-list">
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Zecha [Project Manager]</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Gunn</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Cantor</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Nadeau</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Adi Shah [Project Manager]</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Michael Malette</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Albert Gunnison</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Dylan Wheeler</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ian Gillespie</li>
               </ul>
             </div>
           </div>
@@ -267,11 +298,10 @@
       </div>
     </div>
   </div>
-
-  </div>
-  <div onclick="scrollCard()" class="col-sm-1 icon-col-right"><i class="material-icons">keyboard_arrow_right</i></div>
 </div>
-  <div class="padding"></div>
+  <div onclick="scrollCard()" class="col-sm-1 scroll-icon"><i class="material-icons">keyboard_arrow_right</i></div>
+</div>
+<div class="padding"></div>
 
 
   <footer class="py-3 bg-dark">
