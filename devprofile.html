@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nonprofit Dashboard</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/dashboard.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">PubDev</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link"href="devdir.html">Search Developers</a>
+          </li>
+          <li class="dropdown nav-item">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Profile
+                  <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Inbox</a></li>
+                  <li><a href="#" class="dropdown-item">Edit Profile</a></li>
+                  <li><a href="index.html"class="dropdown-item">Logout</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div style="height:600px;">
+<div>
+  <ul style="list-style-type:none;">
+  <li>
+    <img src="img/justin.jpg" style="height:200px; margin-top:30px; margin-left:175px; border-radius:35%;">
+</li>
+<li>
+  <a href="https://slack.com" style="margin-left:265px;">
+  <img class = "project-icons" style="margin-top:15px;" src = "img/slack-icon.png" alt = "">
+  <!-- <p style="margin-left:300px;margin-top:-13px;">slack.com/justin</p>-->
+</a>
+</li>
+<li style="margin-top:-23px;">
+<a href = "https://github.com"  style="margin-left:315px;">
+   <img class = "project-icons" style="margin-left:5px; "  src = "img/github-icon.svg" alt = "">
+  <!-- <p style="margin-left:300px;margin-top:-13px;">github.com/justin</p>-->
+ </a>
+</li>
+<li style="margin-top:-17px;">
+  <i class="material-icons" style="margin-left:375px;font-size:30px;">email</i>
+  <!--<a href="#" style="margin-left:10px;margin-top:-15px;">justin@bustin.com </a>-->
+</li>
+<li>
+  <div style="margin-top:15px; margin-left:290px;" class="npbutton">
+    <a href="#modal6" data-toggle="modal" class="btn btn-primary">Contact</a>
+  </div>
+</li>
+</ul>
+</div>
+
+<div id="modal6" class="modal fade" data-backdrop="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <form>
+        <h4 class="contact-head">Send Message</h4>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Message here..." rows="4" cols="50"></textarea>
+        </div>
+        <button id="submit" class="btn btn-default btn-primary" onclick="sendMessage('modal6', 'submit')">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div>
+  <ul style="list-style-type:none; margin-left:500px; margin-top:-325px;">
+    <li>
+  <h1 style="font-size:60px;"> Justin Bustin </h1>
+  <h2 style="margin-top:25px;"> About Me </h2>
+  <p style="margin-right:100px;">Hello everyone! I am a recent MIT Graduate with a Bachelor's in Computer Science and minor in Poetry. Although I'm currently unemployed, I've had previous experience freelancing and creating websites for people. I've also previously worked on school projects creating websites.
+  <h2 style="margin-top:25px;">My Skills</h2>
+    <span class="badge badge-info skilltag" id="npskill">Node.js</span>
+    <span class="badge badge-info skilltag" id="npskill">HTML</span>
+    <span class="badge badge-info causetag" id="npcause">CSS</span>
+  <h2 style="margin-top:25px;">My Interests</h2>
+    <span class="badge badge-primary skilltag" id="npskill">Poverty</span>
+    <span class="badge badge-primary skilltag" id="npskill">Racial Equality</span>
+  <h2 style="margin-top:25px;">My Time Commitment</h2>
+  <span class="badge badge-success timetag" id="nptime">&lt40 hours/week</span>
+</li>
+</ul>
+</div>
+</div>
+
+  <footer class="py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; PubDev 2018</p>
+      </div>
+  </footer>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/direct.js"></script>
+
+</body>
+</html>
