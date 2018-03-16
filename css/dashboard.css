@@ -59,10 +59,10 @@
 
 .modal-content {
 	background-color: #fefefe;
-    margin-top: 15%;
-    margin-left: 2%;
-    border: 1px solid #888;
-    padding: 20px;
+	margin-top: 15%;
+	margin-left: 2%;
+	border: 1px solid #E9ECEF;
+	padding: 20px;
 }
 
 .close {
