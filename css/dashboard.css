@@ -14,7 +14,7 @@
 	background-color: #fefefe;
     margin-top: 15%;
     margin-left: 2%;
-    border: 1px solid #888;
+    border: 1px solid #E9ECEF;
     padding: 20px;
 }
 
@@ -33,6 +33,21 @@
     cursor: pointer;
 }
 
+.modal-title {
+	font-weight: 600;
+
+}
+
+#pmcontact {
+	font-size: 14px;
+	padding: 2px;
+}
+
+#form-skill {
+	display: inline-block;
+	/*width: 90px; */
+}
+
 /* General formatting for page */
 
 .padding {
@@ -44,12 +59,12 @@
 	cursor: pointer;
 }
 
-.icon-col-right {
+.scroll-icon-pm {
 	margin-top: 368px;
 }
 
-.icon-col-left {
-	margin-top: 368px;
+.scroll-icon {
+	margin-top: 480px;
 }
 
 /* Page Headings */
@@ -124,9 +139,9 @@
 	/* border-style: solid;
 	border-width: 1px;
 	border-color: grey;*/
-  border-radius: 3px;
+	border-radius: 3px;
 	margin: 3%;
-	background-color: rgb(232, 232, 232);
+	background-color: #E9ECEF;
 	padding-left: 4px;
 }
 

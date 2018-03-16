@@ -34,7 +34,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link"href="nonprofdirectory.html">Search Nonprofits</a>
+            <a class="nav-link" href="devdir.html">Search Developers</a>
           </li>
           <li class="dropdown nav-item">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Profile
@@ -131,37 +131,38 @@
 
 <!-- Content -->
 <div id="bigbox" class="row">
-  <div onclick="scrollCard()" class="col-sm-1 icon-col-left" align="right"><i class="material-icons">keyboard_arrow_left</i></div>
-
-<!-- CARD 1-->
+  <div onclick="scrollCard()" class="col-sm-1 scroll-icon-pm" align="right"><i class="material-icons">keyboard_arrow_left</i></div>
   <div class="col-sm-10">
   <div id="troop75" class="container">
-    <div class="padding"></div>
     <h1 class="welcome">Welcome, Nonprofit</h1>
-    <div id="pm-btn">
-      <button class="btn btn-default btn-primary" data-toggle="modal" data-target="#modal7">Propose A Project</button>
-    </div>
-    <div class="padding"></div>
-    <h4 id="myprojects">Project 1/2</h4>
+    <h4 class="proj-count">Project 1/2</h4>
     <div id="projectbox">
       <div class="proj-heading">
-        <img class="proj-img" src="img/nonprofit1dash.jpeg">
-        <h3 class="proj-title" id="title">Chicago Cares Website</h3>
+        <img class="proj-img" src="img/boyscouts.jpg">
+        <h3 class="proj-title" id="title">Troop 75 Website</h3>
       </div>
       <div class="container">
         <div class="btn-container">
           <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
           <a class="btn btn-default btn-primary" href="https://github.com/">GitHub</a>
+          <a class="btn btn-default btn-primary" href="profile.html">NonProfit Page</a>
         </div>
 
 
         <div class="row">
           <div class="col-sm-6">
-            <h4>FINISHED TASKS</h4>
+            <h4>MY TASKS</h4>
             <ul id="taskList" class="proj-list">
               <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal1">Build Kettlecorn Purchase Form</li>
               <li id="bios" class="proj-list-itm" data-toggle="modal" data-target="#modal2">Fill in Scoutmaster Bios</li>
               <li id="video" class="proj-list-itm" data-toggle="modal" data-target="#modal3">Embed Troop Video to Homepage</li>
+            </ul>
+
+
+            <h4>OPEN TASKS</h4>
+            <ul id="openList" class="proj-list">
+              <li id="contact" class="proj-list-itm" data-toggle="modal" data-target="#modal4" onclick="changeButton('claimbtn')">Update Contact Information</li>
+              <li id="calendar" class="proj-list-itm" data-toggle="modal" data-target="#modal5" onclick="changeButton('claimbtn2')">Create Community Calendar</li>
             </ul>
           </div>
 
@@ -171,10 +172,9 @@
               <h4>MEMBERS</h4>
               <ul class="proj-list">
                 <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Pinski [Project Manager]</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Segal</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Smith</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Hendrix</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Podis</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Jackson Bator</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Justin Huppe</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Dan Nelson</li>
               </ul>
             </div>
           </div>
@@ -182,15 +182,9 @@
       </div>
     </div>
   </div>
-
-
-<!-- CARD 2 -->
   <div id="chicagocares" class="container">
-    <div class="padding"></div>
     <h1 class="welcome">Welcome, Nonprofit</h1>
-    <button id="pm-btn" class="btn btn-default btn-primary" data-toggle="modal" data-target="#modal7">Propose A Project</button>
-    <div class="padding"></div>
-    <h4 id="myprojects">Project 2/2</h4>
+    <h4 class="proj-count">Project 2/2</h4>
     <div id="projectbox">
       <div class="proj-heading">
         <img class="proj-img" src="img/nonprofit1dash.jpeg">
@@ -200,16 +194,22 @@
         <div class="btn-container">
           <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
           <a class="btn btn-default btn-primary" href="https://github.com/">GitHub</a>
+          <a class="btn btn-default btn-primary" href="profile.html">NonProfit Page</a>
         </div>
 
 
         <div class="row">
           <div class="col-sm-6">
-            <h4>FINISHED TASKS</h4>
-            <ul id="taskList" class="proj-list">
-              <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal1">Build Kettlecorn Purchase Form</li>
-              <li id="bios" class="proj-list-itm" data-toggle="modal" data-target="#modal2">Fill in Scoutmaster Bios</li>
-              <li id="video" class="proj-list-itm" data-toggle="modal" data-target="#modal3">Embed Troop Video to Homepage</li>
+            <h4>MY TASKS</h4>
+            <ul id="taskList2" class="proj-list">
+              <li id="reminder" class="proj-list-itm" data-toggle="modal" data-target="#modal10">Enable Event Reminders</li>
+              <li id="webapp" class="proj-list-itm" data-toggle="modal" data-target="#modal11">Standardize web and app interfaces</li>
+            </ul>
+
+
+            <h4>OPEN TASKS</h4>
+            <ul id="openList" class="proj-list">
+              <li id="aboutus" class="proj-list-itm" data-toggle="modal" data-target="#modal12" onclick="changeButton('claimbtn3')">Create About Us Screen</li>
             </ul>
           </div>
 
@@ -218,10 +218,11 @@
             <div>
               <h4>MEMBERS</h4>
               <ul class="proj-list">
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Zecha [Project Manager]</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Gunn</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Cantor</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Sarah Nadeau</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Adi Shah [Project Manager]</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Michael Malette</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Albert Gunnison</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Dylan Wheeler</li>
+                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ian Gillespie</li>
               </ul>
             </div>
           </div>
@@ -229,11 +230,10 @@
       </div>
     </div>
   </div>
-
-  </div>
-  <div onclick="scrollCard()" class="col-sm-1 icon-col-right"><i class="material-icons">keyboard_arrow_right</i></div>
 </div>
-  <div class="padding"></div>
+  <div onclick="scrollCard()" class="col-sm-1 scroll-icon"><i class="material-icons">keyboard_arrow_right</i></div>
+</div>
+<div class="padding"></div>
 
 
   <footer class="py-5 bg-dark">
