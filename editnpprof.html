@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Nonprofit Signup</title>
+    <title>Edit Account Information</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,47 +25,59 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="">PubDev</a>
+          <a class="navbar-brand" href="#">PubDev</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-
+              <li class="nav-item">
+                <a class="nav-link" href="devdir.html">Search Developers</a>
+              </li>
+              <li class="dropdown nav-item">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Profile
+                      <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a href="inbox.html" class="dropdown-item">Inbox</a></li>
+                      <li><a href="editnpprof.html" class="dropdown-item">Edit Profile</a></li>
+                      <li><a href="index.html"class="dropdown-item">Logout</a></li>
+                  </ul>
+              </li>
             </ul>
           </div>
         </div>
-    </nav>
+      </nav>
     <div class="container">
-        <h2>Nonprofit Account Signup</h2>
+        <h2>Update Nonprofit Account Info</h2>
         <form id = "signup" onsubmit="validateForm()">
             <div class="form-group">
                 <label class = "biglabel" for="Name">Name</label>
-                <input type="Name" value= "john Doe" class="form-control" id="npname" name="name" disabled>
+                <input type="Name" value= "john Doe" class="form-control" id="npname" name="name">
             </div>
             <div class="form-group">
                 <label class = "biglabel" for="email">Email Address</label>
-                <input type="email" value = "john@john.com" class="form-control" id="npemail" name="email" disabled>
+                <input type="email" value = "john@john.com" class="form-control" id="npemail">
             </div>
             <div class="form-group">
                 <label class = "biglabel" for="Name">Organization Name</label>
-                <input type="Name" value= "" class="form-control" id="orgname" name="name">
+                <input type="Name" value= "Chicago Cares" class="form-control" id="orgname" name="name">
             </div>
             <div class="form-group">
                 <label class = "biglabel" for="portfolio">Organization Website</label>
-                <input type="portfolio" class="form-control" id="website" placeholder="" name="portfolio">
+                <input type="portfolio" value ="www.chicagocares.org" class="form-control" id="website" placeholder="" name="portfolio">
             </div>
             <div class="form-group">
                 <label class = "biglabel" for="Name">Describe your organization in one sentence.</label>
-                <textarea  class="form-control" id="sentence" rows="2"></textarea>
+                <textarea  class="form-control" id="sentence" rows="2">Chicago Cares partners with community organizations, schools and parks, allowing them to better achieve their missions.</textarea>
             </div>
             <div class="form-group">
                 <label class = "biglabel" for="Name">Describe your organization's impact.</label>
-                <textarea  class="form-control" id="impact" rows="3"></textarea>
+                <textarea  class="form-control" id="impact" rows="4">At Chicago Cares, we empower people to roll up their sleeves to solve the city’s most pressing challenges. Through the power of the volunteer experience, we bring people together from all Chicago neighborhoods. Chicagoans learn that they can and must be agents of change. Volunteers meet immediate needs while simultaneously breaking down barriers and creating a movement for long-term change, connecting with new people and building trust, empathy and understanding. What’s the ultimate goal? Chicago Cares envisions a city where we’re all active participants, fully invested in the city we call home and the success of all of our neighbors.</textarea>
             </div>
             <div class="form-group">
                 <label class = "biglabel" for="Name">Is there anything else that you would like to add about your organization?</label>
-                <textarea  class="form-control" id="additionalinfo" rows="3"></textarea>
+                <textarea  class="form-control" id="additionalinfo" rows="4">Chicago Cares partners with community organizations, schools and parks, allowing them to better achieve their missions. By providing high-quality programming and consistent volunteer support, we partner to help solve the challenges facing our city. Our staff works with each community partner to identify their most pressing needs and then creates and manages a project or series of projects that puts volunteers to work meeting those needs in a meaningful way. There is no cost to become a Chicago Cares community partner.</textarea>
             </div>
             <div class = "col-lg-10" style="padding-left: 0px;">
                 <div class="form-group" id="form">
@@ -81,7 +93,7 @@
                     <!-- <img class='img-upload'/> -->
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Submit</button>
+            <button type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Update</button>
         </form>
     </div>
 

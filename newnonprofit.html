@@ -13,35 +13,71 @@
 
   <!-- Custom styles for this template -->
   <link href="css/index.css" rel="stylesheet">
+  <link href="css/dashboard.css" res="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+<div id="modal7" class="modal fade" data-backdrop="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <form>
+        <h4 class="contact-head">Project Proposal</h4>
+        <p>Briefly describe what project you need done</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <p>Is there a deadline for this project?</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <p>What help or resources can you provide developers with?</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <p>What is your availability to meet with a project manager?</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <p>Please describe any constraints or specifications for your project.</p>
+        <div class="contact-field">
+          <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+        </div>
+        <button id="submit1" class="btn btn-default btn-primary" onclick="sendMessage('modal7', 'submit1')">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="newnonprofit.html">PubDev</a>
+      <a class="navbar-brand" href="#">PubDev</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link"href="devdir.html">Search Developers</a>
+            <a class="nav-link" data-toggle="modal" href="#modal7">Propose A Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="devdir.html">Search Developers</a>
           </li>
           <li class="dropdown nav-item">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Profile
                   <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                  <li><a href="#" class="dropdown-item">Inbox</a></li>
-                  <li><a href="#" class="dropdown-item">Edit Profile</a></li>
+                  <li><a href="devinbox.html" class="dropdown-item">Inbox</a></li>
+                  <li><a href="editnpprof.html" class="dropdown-item">Edit Profile</a></li>
                   <li><a href="index.html"class="dropdown-item">Logout</a></li>
               </ul>
           </li>
-          </ul>
         </ul>
       </div>
     </div>
-</nav>
+  </nav>
 <div style="height: 23rem;">
 <p class = "new-nonprofit-text"> Hello, Nonprofit </p>
 <p class = "subtext"> It looks like you have no current projects. Create a project and search for developers now! </p>
