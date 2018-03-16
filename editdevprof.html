@@ -21,21 +21,67 @@
     <link href="css/bootstrap-tags.css" rel="stylesheet">
     <link href="css/signup.css" rel="stylesheet">
 </head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="dashboard.html">PubDev</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-
-            </ul>
+<div id="modal7" class="modal fade" data-backdrop="false">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <form>
+              <h4 class="contact-head">Apply to be a Project Manager</h4>
+              <p>Why do you want to be a project manager?</p>
+              <div class="contact-field">
+                <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+              </div>
+              <p>How much time can you commit to serving as a project manager?</p>
+              <div class="contact-field">
+                <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+              </div>
+              <p>Describe any previous experience you have in project management.</p>
+              <div class="contact-field">
+                <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+              </div>
+              <p>What areas of software development are you most proficient at?</p>
+              <div class="contact-field">
+                <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+              </div>
+              <p>Are there any causes you are passionate about working for?</p>
+              <div class="contact-field">
+                <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
+              </div>
+              <button id="submit1" class="btn btn-default btn-primary" onclick="sendMessage('modal7', 'submit1')">Submit</button>
+            </form>
           </div>
         </div>
-    </nav>
+      </div>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+                <div class="container">
+                  <a class="navbar-brand" href="dashboard.html">PubDev</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" href="#modal7">Become a Project Manager</a>
+                     </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="nonprofdirectory.html">Search Nonprofits</a>
+                      </li>
+                      <li class="dropdown nav-item">
+                          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Profile
+                              <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a href="devinbox.html" class="dropdown-item">Inbox</a></li>
+                              <li><a href="editdevprof.html" class="dropdown-item">Edit Profile</a></li>
+                              <li><a href="index.html"class="dropdown-item">Logout</a></li>
+                          </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
     <div class="container">
         <h2>Update Developer Account Info</h2>
         <form id = "signup" onsubmit="validateForm()">
