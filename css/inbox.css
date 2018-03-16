@@ -49,6 +49,26 @@
     margin-left: 10px;
 }
 
+#img2{
+    margin-top: 15px;
+    background-image: url('../img/man.jpg');
+    background-size: 95px 95px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#img3{
+    margin-top: 15px;
+    background-image: url('../img/Home.png');
+    background-size: 95px 95px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
 .modal {
 	display: none;
 	position: fixed;
@@ -62,12 +82,13 @@
 
 .modal-content {
     background-color: #fefefe;
-    height: 700px;
+    /* height: 700px; */
     width: 700px;
     margin-top: 15%;
     margin-left:-15%;
     border: 1px solid #888;
     padding: 20px;
+    overflow:auto;
 }
 
 .close {
@@ -84,3 +105,50 @@
     text-decoration: none;
     cursor: pointer;
 }
+<<<<<<< HEAD
+
+.conversation-header{
+    height:40px;
+    border-bottom: 1px solid #E9ECEF;
+    margin-bottom: 20px;
+}
+
+.received{
+    width: 300px;
+    background-color: #E9ECEF;
+    padding: 10px;
+    border-radius: 10px;
+    float: left;
+}
+
+.sent{
+    width: 300px;
+    border: 1px solid #EE0979;
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+}
+
+
+.date-wrapper{
+    margin-bottom: 15px;
+}
+
+
+.sent-date{
+    color: #4d4d4d;
+    float:right;
+    font-size: 12px;
+}
+
+.received-date{
+    color: #4d4d4d;
+    float:left;
+    font-size: 12px;
+}
+
+.header-wrapper{
+    text-align: center;
+}
+=======
+>>>>>>> 87fa00d29edeb5f5f4d125e1552a6f62734f6b94
