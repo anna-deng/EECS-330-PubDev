@@ -150,7 +150,9 @@
           <div class="contact-field">
             <textarea class="contact-text" placeholder="Answer here..." rows="4" cols="50"></textarea>
           </div>
-          <button id="submit1" class="btn btn-default btn-primary" onclick="sendMessage('modal7', 'submit1')">Submit</button>
+          <div align="center">
+            <button id="submit1" class="btn btn-default btn-primary" onclick="sendMessage('modal7', 'submit1')">Submit</button>
+          </div>
         </form>
       </div>
     </div>
@@ -191,123 +193,58 @@
 
 
 <!-- Content -->
-
 <div id="bigbox" class="row">
-  <div onclick="scrollCard()" class="col-sm-1 scroll-icon" align="right"><i class="material-icons">keyboard_arrow_left</i></div>
-
-<!-- CARD 1-->
-
+  <div class="col-sm-1"></div>
   <div class="col-sm-10">
-  <div id="troop75" class="container">
-    <div class="padding"></div>
-    <h1 class="welcome" style="margin-top:-25px; margin-bottom:-25px;">Welcome, Nonprofit</h1>
-    <div class="padding"></div>
-    <!--<h6 id="myprojects" style="text-align:center;">Project 1/2</h6>-->
-   <div>
-     <img style="height:15px; margin-left:415px; margin-bottom:5px;" src="img/checked.png">
-     <img style="height:15px; margin-bottom:5px;" src="img/circle.jpg">
-   </div>
-    <div id="projectbox">
-      <div class="proj-heading">
-        <img class="proj-img" src="img/boyscouts.jpg">
-        <h3 class="proj-title" id="title">Troop 75 Website</h3>
-      </div>
-      <div class="container">
-        <div class="btn-container">
-          <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
-          <a class="btn btn-default btn-primary" href="https://github.com/">GitHub</a>
-          <a class="btn btn-default btn-primary" href="profile.html">NonProfit Page</a>
+    <div id="chicagocares" style="display: block;" class="container">
+      <div class="padding"></div>
+      <h1 class="welcome" style="margin-top:-25px; margin-bottom:-25px;">Welcome, Nonprofit</h1>
+      <div class="padding"></div>
+      <div id="projectbox">
+        <div class="proj-heading">
+          <img class="proj-img" src="img/nonprofit1dash.jpeg">
+          <h3 class="proj-title" id="title">Chicago Cares App</h3>
         </div>
-
-
-        <div class="row">
-          <div class="col-sm-6">
-            <h4>MY TASKS</h4>
-            <ul id="taskList" class="proj-list">
-              <li id="kettlecorn" class="proj-list-itm" data-toggle="modal" data-target="#modal1">Build Kettlecorn Purchase Form</li>
-              <li id="bios" class="proj-list-itm" data-toggle="modal" data-target="#modal2">Fill in Scoutmaster Bios</li>
-              <li id="video" class="proj-list-itm" data-toggle="modal" data-target="#modal3">Embed Troop Video to Homepage</li>
-            </ul>
-
-
-            <h4>OPEN TASKS</h4>
-            <ul id="openList" class="proj-list">
-              <li id="contact" class="proj-list-itm" data-toggle="modal" data-target="#modal4" onclick="changeButton('claimbtn')">Update Contact Information</li>
-              <li id="calendar" class="proj-list-itm" data-toggle="modal" data-target="#modal5" onclick="changeButton('claimbtn2')">Create Community Calendar</li>
-            </ul>
+        <div class="container">
+          <div class="btn-container">
+            <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
+            <a class="btn btn-default btn-primary" href="https://github.com/">GitHub</a>
+            <a class="btn btn-default btn-primary" href="nonprofit.html">NonProfit Page</a>
           </div>
-
-
-          <div class="col-md-6">
-            <div>
-              <h4>MEMBERS</h4>
-              <ul class="proj-list">
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ben Pinski [Project Manager]</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Jackson Bator</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Justin Huppe</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Dan Nelson</li>
+          <div class="row">
+            <div class="col-sm-6">
+              <h4>MY TASKS</h4>
+              <ul id="taskList2" class="proj-list">
+                <li id="reminder" class="proj-list-itm" data-toggle="modal" data-target="#modal10">Enable Event Reminders</li>
+                <li id="webapp" class="proj-list-itm" data-toggle="modal" data-target="#modal11">Standardize web and app interfaces</li>
               </ul>
+
+
+              <h4>OPEN TASKS</h4>
+              <ul id="openList" class="proj-list">
+                <li id="aboutus" class="proj-list-itm" data-toggle="modal" data-target="#modal12" onclick="changeButton('claimbtn3')">Create About Us Screen</li>
+              </ul>
+            </div>
+
+
+            <div class="col-md-6">
+              <div>
+                <h4>MEMBERS</h4>
+                <ul class="proj-list">
+                  <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Adi Shah [Project Manager]</li>
+                  <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Michael Malette</li>
+                  <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Albert Gunnison</li>
+                  <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Dylan Wheeler</li>
+                  <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ian Gillespie</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="chicagocares" class="container">
-    <div class="padding"></div>
-    <h1 class="welcome" style="margin-top:-25px; margin-bottom:-25px;">Welcome, Nonprofit</h1>
-    <div class="padding"></div>
-    <div>
-      <img style="height:15px; margin-left:415px; margin-bottom:5px;" src="img/circle.jpg">
-      <img style="height:15px; margin-bottom:5px;" src="img/checked.png">
-    </div>
-    <div id="projectbox">
-      <div class="proj-heading">
-        <img class="proj-img" src="img/nonprofit1dash.jpeg">
-        <h3 class="proj-title" id="title">Chicago Cares App</h3>
-      </div>
-      <div class="container">
-        <div class="btn-container">
-          <a class="btn btn-default btn-primary" href="https:/slack.com">Slack</a>
-          <a class="btn btn-default btn-primary" href="https://github.com/">GitHub</a>
-          <a class="btn btn-default btn-primary" href="profile.html">NonProfit Page</a>
-        </div>
-
-
-        <div class="row">
-          <div class="col-sm-6">
-            <h4>MY TASKS</h4>
-            <ul id="taskList2" class="proj-list">
-              <li id="reminder" class="proj-list-itm" data-toggle="modal" data-target="#modal10">Enable Event Reminders</li>
-              <li id="webapp" class="proj-list-itm" data-toggle="modal" data-target="#modal11">Standardize web and app interfaces</li>
-            </ul>
-
-
-            <h4>OPEN TASKS</h4>
-            <ul id="openList" class="proj-list">
-              <li id="aboutus" class="proj-list-itm" data-toggle="modal" data-target="#modal12" onclick="changeButton('claimbtn3')">Create About Us Screen</li>
-            </ul>
-          </div>
-
-
-          <div class="col-md-6">
-            <div>
-              <h4>MEMBERS</h4>
-              <ul class="proj-list">
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Adi Shah [Project Manager]</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Michael Malette</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Albert Gunnison</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Dylan Wheeler</li>
-                <li class="proj-list-itm" data-toggle="modal" data-target="#modal6" onclick="switchButton('submit')">Ian Gillespie</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  <div onclick="scrollCard()" class="col-sm-1 scroll-icon"><i class="material-icons">keyboard_arrow_right</i></div>
+  <div class="col-sm-1"></div>
 </div>
 <div class="padding"></div>
 
